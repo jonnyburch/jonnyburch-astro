@@ -3,34 +3,21 @@ const { frontmatter } = Astro.props;
 import Layout from './Layout.astro';
 ---
 <Layout title={frontmatter.title}>
-	<main class="flex flex-col md:flex-row md:items-start flex-1 relative">
-		<div class="flex flex-col md:w-[50%] flex-shrink-0 min-w-36 p-4 lg:p-12 gap-4">
-      <div class="pb-4">
-        <h1 class="font-display text-6xl">{frontmatter.title}</h1>
-      </div>
-      <p class="opacity-50 pb-4">
-        {new Date(frontmatter.date).toDateString()}
-        {frontmatter.categories.length !== 0 && (
-          <span class="px-1">·</span>
-          <span class="">
-            {frontmatter.categories.map((category) => (
-              {category}
-            ))}
-          </span>
-        )}
-      </p>
-      <div class="prose prose-custom">
-        <slot />
-      </div>
+	<main class="">
+    <div class="py-8 flex flex-col gap-2">
+      <h4 class="text-2xl font-bold">{new Date(frontmatter.date).toDateString()}</h4>
+      <h1 class="font-display text-6xl font-bold xerox">{frontmatter.title}</h1>
+      <p class="text-xl">{frontmatter.description}</p>
     </div>
-    <div class="p-4 sticky flex-grow-0 top-0 min-h-96">
-      {frontmatter.images && (
-        <div class="flex flex-col gap-4">
-          {frontmatter.images.map((image) => (
-            <img src={image.src} alt={image.alt} />
-          ))}
-        </div>
-      )}
-		</div>
+    {frontmatter.categories.length !== 0 && (
+      <span class="">
+        {frontmatter.categories.map((category, index) => (
+          `${category}${index < frontmatter.categories.length - 1 ? ', ' : ''}`
+        ))}
+      </span>
+    )}
+    <div class="prose xl:prose-xl">
+      <slot />
+    </div>
   </main>
 </Layout>

@@ -8,6 +8,7 @@ const permalink = new URL(Astro.url.pathname, Astro.site).href;
 const ogImageURL = '/share-image.png';
 import "../styles/tailwind.css";
 import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 const currentPath = Astro.url.pathname;
 ---
 
@@ -40,11 +41,12 @@ const currentPath = Astro.url.pathname;
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="bg-red-100 flex flex-col">
-			<div class="flex-1 p-2">
+		<div class="grid grid-cols-[50px_1fr]">
+			<Header />
+			<div class="flex flex-col flex-1 items-center">
 				<slot />
+				<Footer />
 			</div>
-			<Footer />
 		</div>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import {Content as Homepage} from '../components/Homepage.md';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import PostCard from '../components/PostCard.astro';
@@ -11,12 +11,17 @@ const allPosts = await getCollection('posts', ({ data }) => {
 ---
 
 <Layout title={`${title} — ${subtitle}`} description={description}>
-	<Welcome />
-	<ul class="flex flex-col gap-4 py-4">
-		{allPosts
-			.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-			.map((post) => <PostCard title={post.data.title} date={post.data.date} href={post.slug} description={post.data.description} draft={post.data.draft} />)
-		}
-
-	</ul>
+	<main class="">
+		<div class="pt-8 prose lg:prose-xl">
+			<Homepage />
+		</div>
+		<div class="w-full">
+			<ul class="flex flex-col gap-4 py-4">
+				{allPosts
+					.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+					.map((post) => <PostCard title={post.data.title} date={post.data.date} href={post.slug} description={post.data.description} draft={post.data.draft} />)
+				}
+			</ul>
+		</div>
+	</main>
 </Layout>

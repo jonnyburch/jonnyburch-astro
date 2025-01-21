@@ -1,0 +1,9 @@
+
+# Welcome to the personal webshite of Jonny Burch
+I'm a designer, product wonk, founder and reader of internets. Currently tinkering as [Toy Studio]("https://toy.studio").
+Until very recently I was CEO of [Progression]("https://progression.co"), the worlds first career pathway management platform. [We got acquired in September 2024](https://progression.co/blog/progression-is-joining-the-career-io-family/) and I remain both immensely proud of what we achieved and very pleased that it's now in good hands.
+
+(I'll probably write more about my 6 year journey as a founder — aka all my fu*kups — in good time.)
+
+<p class="subtitle">Before all that I led consumer design at now foodicorn <a href="https://deliveroo.co.uk">Deliveroo</a> <a href="https://www.google.com/finance/quote/ROO:LON?sa=X&ved=2ahUKEwivtq-vmqGHAxV0TEEAHTLMCAQQ3ecFegQIMBAX" class="">(LON:ROO)</a> for a bit, <a href="https://mealsforthenhs.org">powered £1.8m+ of donations for 300k+ NHS staff meals</a> during covid, helped to build a bank for children that made <a href="https://https://www.dailymail.co.uk/news/article-2714436/Debit-card-lets-children-buy-porn-alcohol-weapons-blocked-thanks-Mail-Sunday.html">ahem, headlines</a>, published 6 issues and 15,000 copies of a <a href="https://shellsuitzombie.co.uk">sweary magazine for creative graduates</a> that my dad disapproved of and organised a <a href="https://vimeo.com/82980736">30 day creative festival</a> on a dime in the middle of Shoreditch. I also <a href="https://jonnyburch.com/goldie-interview/">interviewed Goldie</a> and watched him chainsaw a tree, which was nice.</p>
+<p class="subtitle">I can mainly be found online on <a href="https://x.com/jonnyburch">X</a>, <a href="https://bsky.app/profile/jonnyburch.com">Bluesky</a> or <a href="https://linkedin.com/in/jonnyburch">LinkedIn</a> or adding occasional longer updates on this site (see below).</p>

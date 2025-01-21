@@ -10,11 +10,11 @@ interface Props {
 const { href, title, description, date, draft } = Astro.props;
 ---
 
-<li class="max-w-96">
-		<a href={`/projects/${href}`} class="">
-			<div class="xerox hover:translate-x-2 transition-all flex flex-col">
+<li class="">
+		<a href={`/posts/${href}`} class="">
+			<div class="hover:translate-x-2 transition-all flex flex-col">
 				<span class="">{date.toLocaleDateString()}:</span>
-				<b>{title}</b>
+				<h3 class="xerox font-display font-bold text-2xl">{title}</h3>
 				{description && (
 					<span class="opacity-50"> — {description}</span>
 				)}
