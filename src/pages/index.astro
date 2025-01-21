@@ -1,0 +1,22 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import PostCard from '../components/PostCard.astro';
+const title = "Jonny Burch"
+const subtitle = "A person"
+const description = "Personal website."
+const allPosts = await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;});
+---
+
+<Layout title={`${title} — ${subtitle}`} description={description}>
+	<Welcome />
+	<ul class="flex flex-col gap-4 py-4">
+		{allPosts
+			.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+			.map((post) => <PostCard title={post.data.title} date={post.data.date} href={post.slug} description={post.data.description} draft={post.data.draft} />)
+		}
+
+	</ul>
+</Layout>

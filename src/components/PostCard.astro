@@ -1,0 +1,26 @@
+---
+interface Props {
+	title: string;
+	href: string;
+	description: string;
+	draft: boolean;
+  date: date;
+}
+
+const { href, title, description, date, draft } = Astro.props;
+---
+
+<li class="max-w-96">
+		<a href={`/projects/${href}`} class="">
+			<div class="xerox hover:translate-x-2 transition-all flex flex-col">
+				<span class="">{date.toLocaleDateString()}:</span>
+				<b>{title}</b>
+				{description && (
+					<span class="opacity-50"> — {description}</span>
+				)}
+				{draft === true && (
+					<span class="text-red-500">Draft</span>
+				)}
+			</div>
+		</a>
+</li>

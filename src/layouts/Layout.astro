@@ -1,0 +1,50 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+const { title, description = "A person" } = Astro.props;
+const permalink = new URL(Astro.url.pathname, Astro.site).href;
+const ogImageURL = '/share-image.png';
+import "../styles/tailwind.css";
+import Footer from '../components/Footer.astro'
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="title" content={currentPath === "/" ? title : title + " | Toy"} />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={permalink} />
+		<meta property="og:title" content={currentPath === "/" ? title : title + " | Jonny Burch"} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImageURL} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={permalink} />
+		<meta property="twitter:title" content={currentPath === "/" ? title : title + " | Jonny Burch"} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={ogImageURL} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="bg-red-100 flex flex-col">
+			<div class="flex-1 p-2">
+				<slot />
+			</div>
+			<Footer />
+		</div>
+	</body>
+</html>
