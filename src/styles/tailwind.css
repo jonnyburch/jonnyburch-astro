@@ -8,16 +8,6 @@
 }
 
 @layer base {
-  html {
-    @apply subpixel-antialiased bg-peach-100 text-aubergine-700;
-  }
-
-  a {
-    @apply transition-all duration-150;
-  }
-  a:hover {
-    filter: url(#xerox);
-  }
 
   .crazy {
     filter: url(#crazy);
@@ -29,10 +19,19 @@
     filter: url(#xerox);
   }
 
-  .prose-custom {
-    @apply prose-lg lg:prose-xl;
+  html {
+    @apply subpixel-antialiased bg-peach-100 text-aubergine-700;
+    filter: url(#wonky);
   }
-  .prose-custom a {
-    @apply text-aubergine-700;
+
+  a {
+    @apply transition-all duration-150;
+  }
+  a:hover {
+    filter: url(#xerox);
+  }
+
+  .prose-custom {
+    @apply prose prose-h1:text-aubergine-700 prose-p:text-aubergine-700 prose-a:text-aubergine-700;
   }
 }

@@ -1,5 +1,6 @@
 
-# Welcome to the personal webshite of Jonny Burch
+<h1 class="text-aubergine-700 xerox"> Welcome to the personal webshite of Jonny Burch</h1>
+
 I'm a designer, product wonk, founder and reader of internets. Currently tinkering as [Toy Studio]("https://toy.studio").
 Until very recently I was CEO of [Progression]("https://progression.co"), the worlds first career pathway management platform. [We got acquired in September 2024](https://progression.co/blog/progression-is-joining-the-career-io-family/) and I remain both immensely proud of what we achieved and very pleased that it's now in good hands.
 
