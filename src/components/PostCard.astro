@@ -13,8 +13,8 @@ const { href, title, description, date, draft } = Astro.props;
 <li class="">
 		<a href={`/posts/${href}`} class="">
 			<div class="flex flex-col wonky">
+        <h3 class="font-display font-bold text-4xl underline hover-xerox">{title}</h3>
 				<span class="">{date.toLocaleDateString()}:</span>
-				<h3 class="font-display font-bold text-2xl">{title}</h3>
 				{description && (
 					<span class="opacity-50"> — {description}</span>
 				)}

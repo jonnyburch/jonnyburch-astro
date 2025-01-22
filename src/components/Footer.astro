@@ -1,13 +1,15 @@
 ---
 import Filters from './Filters.astro';
 ---
-<div class="w-full prose lg:prose-xl text-sm ">
-	Find me on:
-  <ul class="flex flex-col list-none gap-2 pl-0">
-    <li><a href="https://bluesky.social/@jonnyburch">Bluesky</a></li>
-    <li><a href="https://www.linkedin.com/in/jonnyburch/">Linkedin</a></li>
-    <li><a href="https://github.com/jonnyburch">Github</a></li>
-    <li><a href="mailto:jonny@jonnyburch.com">jonny@jonnyburch.com</a></li>
+<div class="text-sm py-8 container">
+	<p class="pb-2">Find me on:</p>
+  <ul class="flex flex-col list-none gap-2">
+    <li class="text-sm underline"><a href="https://bluesky.social/@jonnyburch">Bluesky</a></li>
+    <li class="text-sm underline"><a href="https://www.linkedin.com/in/jonnyburch/">Linkedin</a></li>
+    <li class="text-sm underline"><a href="https://github.com/jonnyburch">Github</a></li>
+    <li class="text-sm underline"><a href="mailto:jonny@jonnyburch.com">jonny@jonnyburch.com</a></li>
   </ul>
 </div>
-<Filters />
+<div class="absolute bottom-0 right-0">
+  <Filters />
+</div>

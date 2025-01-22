@@ -3,6 +3,9 @@ import {Content as Homepage} from '../components/Homepage.md';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import PostCard from '../components/PostCard.astro';
+import { Image } from 'astro:assets';
+import Jonny from '../assets/jonny.png';
+
 const title = "Jonny Burch"
 const subtitle = "A person"
 const description = "Personal website."
@@ -11,11 +14,21 @@ const allPosts = await getCollection('posts', ({ data }) => {
 ---
 
 <Layout title={`${title} — ${subtitle}`} description={description}>
-	<main class="">
-		<div class="pt-8 prose prose-h1:text-aubergine-700 prose-custom lg:prose-xl">
+	<main class="pt-8">
+		<div class="crazy flex pb-8 flex-wrap">
+			<Image src={Jonny} alt="J" class="w-1/5 max-w-36" />
+			<Image src={Jonny} alt="o" class="w-1/5 max-w-36" />
+			<Image src={Jonny} alt="n" class="w-1/5 max-w-36" />
+			<Image src={Jonny} alt="n" class="w-1/5 max-w-36" />
+			<Image src={Jonny} alt="y" class="w-1/5 max-w-36" />
+		</div>
+		<div class="w-full max-w-prose">
+			<h1 class="text-aubergine-700 xerox text-3xl md:text-4xl lg:text-7xl font-bold"> Welcome to the personal webshite of Jonny Burch</h1>
+		</div>
+		<div class="prose prose-h1:text-aubergine-700 prose-custom lg:prose-xl">
 			<Homepage />
 		</div>
-		<div class="w-full">
+		<div class="w-full max-w-prose">
 			<ul class="flex flex-col gap-4 py-4">
 				{allPosts
 					.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())

@@ -41,9 +41,9 @@ const currentPath = Astro.url.pathname;
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="grid grid-cols-[50px_1fr]">
+		<div class="p-4 md:p-0 md:grid md:grid-cols-[50px_1fr]">
 			<Header />
-			<div class="flex flex-col flex-1 items-center">
+			<div class="content-container">
 				<slot />
 				<Footer />
 			</div>

@@ -19,19 +19,27 @@
     filter: url(#xerox);
   }
 
+  .hover-xerox:hover {
+    filter: url(#xerox);
+  }
+
   html {
     @apply subpixel-antialiased bg-peach-100 text-aubergine-700;
     filter: url(#wonky);
   }
 
-  a {
+  p a, li a {
     @apply transition-all duration-150;
   }
-  a:hover {
+  p a:hover, li a:hover {
     filter: url(#xerox);
   }
 
   .prose-custom {
     @apply prose prose-h1:text-aubergine-700 prose-p:text-aubergine-700 prose-a:text-aubergine-700;
+  }
+
+  .content-container {
+    @apply mx-auto w-full md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl;
   }
 }
