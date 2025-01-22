@@ -14,10 +14,10 @@ const { href, title, description, date, draft, categories } = Astro.props;
 <li class="">
 		<a href={`/${href}`} class="wonky">
 			<p class="pb-2">
-				<span class="font-display font-bold text-3xl hover-xerox border-b-2 border-black break-words">{title}</span>
+				<span class="font-display font-semibold text-3xl hover-xerox border-b-2 border-black break-words">{title}</span>
 			</p>
 			{description && (
-				<p class="text-xl pb-2"> — {description}</p>
+				<p class="text-lg pb-2"> — {description}</p>
 			)}
 			<p class="text-sm opacity-50">
 				{categories.length !== 0 && (
