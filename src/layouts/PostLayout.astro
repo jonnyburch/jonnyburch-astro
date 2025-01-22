@@ -4,10 +4,11 @@ import Layout from './Layout.astro';
 ---
 <Layout title={frontmatter.title}>
 	<main class="content-container">
-    <div class="py-8 flex flex-col gap-2 w-prose">
+    <div class="py-8 flex flex-col gap-2">
       <h4 class="text-2xl font-bold">{new Date(frontmatter.date).toDateString()}</h4>
       <h1 class="font-display text-6xl font-bold xerox">{frontmatter.title}</h1>
       <p class="text-xl">{frontmatter.description}</p>
+      {frontmatter.image && <img src={`/src/assets/${frontmatter.image.src}`} alt={frontmatter.image.alt} class="max-w-full xerox" />}
     </div>
     {frontmatter.categories.length !== 0 && (
       <span class="">

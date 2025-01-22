@@ -9,11 +9,12 @@ const postCollection = defineCollection({
     shout: z.optional(z.string()),
     date: z.date(),
     draft: z.optional(z.boolean()),
-    images: z.optional(
-      z.array(z.object({
+    image: z.optional(
+      z.object({
         src: z.string(),
-        alt: z.string(),
-    }))),
+        alt: z.optional(z.string()),
+    })),
+    redirect_to: z.optional(z.string()),
   })
 });
 

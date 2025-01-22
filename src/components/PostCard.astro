@@ -4,23 +4,34 @@ interface Props {
 	href: string;
 	description: string;
 	draft: boolean;
+	categories: string[];
   date: date;
 }
 
-const { href, title, description, date, draft } = Astro.props;
+const { href, title, description, date, draft, categories } = Astro.props;
 ---
 
 <li class="">
-		<a href={`/posts/${href}`} class="">
-			<div class="flex flex-col wonky">
-        <h3 class="font-display font-bold text-4xl underline hover-xerox">{title}</h3>
-				<span class="">{date.toLocaleDateString()}:</span>
-				{description && (
-					<span class="opacity-50"> — {description}</span>
+		<a href={`/${href}`} class="wonky">
+			<p class="pb-2">
+				<span class="font-display font-bold text-3xl hover-xerox border-b-2 border-black break-words">{title}</span>
+			</p>
+			{description && (
+				<p class="text-xl pb-2"> — {description}</p>
+			)}
+			<p class="text-sm opacity-50">
+				{categories.length !== 0 && (
+					<>
+						{categories.map((category, index) => (
+							`${category}${index < categories.length - 1 ? ', ' : ''}`
+						))}
+						<span class="pl-1">·</span>
+					</>
 				)}
-				{draft === true && (
-					<span class="text-red-500">Draft</span>
-				)}
-			</div>
+				{date.toDateString()}
+			</p>
+			{draft === true && (
+				<span class="text-red-500">Draft</span>
+			)}
 		</a>
 </li>
