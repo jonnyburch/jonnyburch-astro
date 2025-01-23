@@ -10,16 +10,16 @@ import { SEO } from "astro-seo";
 const { title, description = "A person" } = Astro.props;
 const { url, site } = Astro;
 const openGraphImageUrl = getImagePath({ url, site });
-
 ---
 
 
 <title>{title}</title>
 <meta name="description" content="Astro description" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 <SEO
+  title={title},
+  description={description},
   openGraph={
     {
       basic: {
@@ -32,5 +32,8 @@ const openGraphImageUrl = getImagePath({ url, site });
         description: description,
       },
     }
-  }
+  },
+  extend={{
+    link: [{rel: "icon", href: "/favicon.svg"}],
+  }},
 />
