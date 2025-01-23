@@ -4,11 +4,9 @@ date: 2019-07-01 20:43:00
 categories: [Journal]
 image:
     src:  ../../assets/neil-chat.png
+    caption: The conversation that started it all, back in December 2018
 description: It's taken a long time but is totally worth the wait
 ---
-
-![The conversation that started it all, back in December 2018](../../assets/neil-chat.png)
-*The conversation that started it all, back in December 2018*
 
 **I've been a nightmare for the last few weeks.** I'm dotting around, tweaking UI one minute and stressing about the future the next.
 

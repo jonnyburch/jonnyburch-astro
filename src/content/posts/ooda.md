@@ -17,7 +17,7 @@ So when starting a major project, whether you’re a company or an individual cr
 ![The ‘O.O.D.A. loop’ shows an effective way of moving quickly and getting to the right answer.](https://cdn-images-1.medium.com/max/2000/1*7U0wtWmHQNKe7EgKviiM4g.jpeg)
 *The ‘O.O.D.A. loop’ shows an effective way of moving quickly and getting to the *right *answer.*
 
-> *‘In order to win, we should operate at a faster tempo or rhythm than our adversaries … or, better yet, get inside [the] adversary’s O.O.D.A. time cycle or loop.’*
+> ‘In order to win, we should operate at a faster tempo or rhythm than our adversaries … or, better yet, get inside [the] adversary’s O.O.D.A. time cycle or loop.’
 
 The brainchild of military strategist John Boyd, The OODA loop was originally devised to explain the outcomes of dogfights — how could a slower fighter jet with lower capabilities be able to defeat a more technically advanced machine? The answer lay in the pilots ability to more quickly percieve and react to his surroundings — to get his O.O.D.A. loop to be shorter than his opponents (one answer lying in a wider range of vision from his cockpit).
 

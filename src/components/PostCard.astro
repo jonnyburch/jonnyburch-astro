@@ -1,4 +1,6 @@
 ---
+import ExternalLinkIcon from './ExternalLinkIcon.astro';
+
 interface Props {
 	title: string;
 	href: string;
@@ -23,6 +25,11 @@ let link = redirect_to ? redirect_to : `/${href}`;
 				<p class="text-lg"> — {description}</p>
 			)}
 			<p class="text-sm opacity-50">
+				{redirect_to && (
+					<span class="inline-block w-4 h-4 translate-y-0.5">
+						<ExternalLinkIcon />
+					</span>
+				)}
 				{categories.length !== 0 && (
 					<>
 						{categories.map((category, index) => (

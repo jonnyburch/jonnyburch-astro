@@ -7,8 +7,6 @@ image:
 description: A conference talk at Jam London
 ---
 
-![Jam London](../../assets/jam-london.jpg)*Jam London*
-
 I gave this talk to 600 attendees at [Jam London](https://www.makingjam.io) – a big room and amazing setting. It was really hard to write – surprisingly hard considering it's the subject I've been focusing on for so long.
 
 I managed to fit in some stories about my mum and spreadsheets along the way. Enjoy!

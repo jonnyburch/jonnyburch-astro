@@ -2,8 +2,6 @@
 title: 'Week 9: Revenue!'
 categories: [Journal]
 date: 2018-08-11 21:27:00
-image:
-    src:  ../../assets/muircamp.jpg
 description: First paying customers! It's alive...
 ---
 
@@ -50,7 +48,8 @@ Having spent a month or so taking my time, I now have a bunch of timelines to hi
 - The wobbly focus cost me time, doing paid work costs me time, and making bad technical decisions attempting to build beyond my capabilities costs me time too. I don't understand the nuances of React enough to be able to move fast on Gatsby (I now know) and ended up taking at least 100% more time building progressionpack.com than I would have done if I'd chosen, say, Jekyll.
 - I'm on a high right now but there have been lonely periods this month again. Unproductive weeks, self doubt. Definitely still fairly regularly fantasising about someone to share the whole thing with.
 - Related to the above, the hook of putting something out there means more time refreshing Twitter, Linkedin, Twitter, Linkedin. It led to this slightly whiny tweet.
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I keep chatting to people and telling them what I&#39;m up to, and they&#39;re like &#39;I know, it&#39;s cool, I&#39;ve been reading your blog/tweets&#39;. <br><br>If you dig it, don&#39;t wait for me to ask, tell me! <br><br>&#39;Like&#39; my things, reply to my newsletter, drop me a text. At this stage, it really helps.</p>&mdash; Jonny Burch (@jonnyburch) <a href="https://twitter.com/jonnyburch/status/1026880440798511104?ref_src=twsrc%5Etfw">August 7, 2018</a></blockquote>
+
+<div class="tweet"><p>I keep chatting to people and telling them what I&#39;m up to, and they&#39;re like &#39;I know, it&#39;s cool, I&#39;ve been reading your blog/tweets&#39;. <br>If you dig it, don&#39;t wait for me to ask, tell me! <br>&#39;Like&#39; my things, reply to my newsletter, drop me a text. At this stage, it really helps.</p></div>
 
 ### Goals for next update (2 weeks?)
 

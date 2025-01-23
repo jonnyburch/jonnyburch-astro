@@ -12,7 +12,7 @@ This is great. It means we can support the product teams as they grow (over 250 
 We’ve grown fast, which means change in our team culture has happened fast too. We’re very proud of the (incredible) people in the team, but sometimes you need more than talent when there are so many moving parts and everyone is embedded in their own product team and project, with less time to all hang out.
 
 We’re doing a few things to help us grow well — including setting up a UI infrastructure team to work on our design systems, constantly iterating on how we critique and review work and improving our working patterns and team rituals. But sometimes even these are hard to share across our disciplines.
-> # **The other thing I notice– helping the rest of the business understand what we as designers, researchers and writers actually *do* is a constant task.**
+> The other thing I notice– helping the rest of the business understand what we as designers, researchers and writers actually *do* is a constant task.
 
 I get asked the question ‘what does the product design team work on’ more often than I would have expected — despite the fact that our partners in the rest of the business are very smart and technically savvy. The fact is, from the outside it’s hard to understand how we think and what we’re up to every day.
 

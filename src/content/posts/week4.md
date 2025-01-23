@@ -2,8 +2,6 @@
 title: 'Week 3-4: Progression'
 categories: [Journal]
 date: 2018-06-29 08:17:00
-image:
-    src:  ../../assets/salad.png
 ---
 
 _Posting on a Friday this week, it's been hella busy, after last week off. May stick to Fridays for now, always a good time for a retro._
@@ -25,14 +23,11 @@ Inspiration doesn't gradually grow during downtime, it hits you suddenly. Having
 - People posted it on Hacker News, Product Hunt etc. Others were tweeting/sharing it themselves (I only discovered all of this through GA)
 - A funny moment as someone shared it on a slack group I'm in, not realising I'd made it.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I made a thing today. <br><br>For the last couple of months I&#39;ve been collecting public &#39;progression frameworks&#39; for designers/engineers in a spreadsheet. It&#39;s now a little website. <br><br>Feat. <a href="https://twitter.com/Medium?ref_src=twsrc%5Etfw">@medium</a> <a href="https://twitter.com/MakingMonzo?ref_src=twsrc%5Etfw">@MakingMonzo</a> <a href="https://twitter.com/BuzzFeed?ref_src=twsrc%5Etfw">@BuzzFeed</a> etc.<br><br>Please share and contribute! ✏️<a href="https://t.co/NEg82ulB9b">https://t.co/NEg82ulB9b</a></p>&mdash; Jonny Burch (@jonnyburch) <a href="https://twitter.com/jonnyburch/status/1011666042295345152?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
-
-
-<div>
-<br>
-<p><b>*Record scratch* *Freeze Frame*</b></p>
-<br>
+<div class="tweet">
+    <p class="my-0">I made a thing today. <br>For the last couple of months I&#39;ve been collecting public &#39;progression frameworks&#39; for designers/engineers in a spreadsheet. It&#39;s now a little website. Feat. <a href="https://twitter.com/Medium?ref_src=twsrc%5Etfw">@medium</a> <a href="https://twitter.com/MakingMonzo?ref_src=twsrc%5Etfw">@MakingMonzo</a> <a href="https://twitter.com/BuzzFeed?ref_src=twsrc%5Etfw">@BuzzFeed</a> etc.<br>Please share and contribute! ✏️<a href="https://t.co/NEg82ulB9b">https://t.co/NEg82ulB9b</a></p>
 </div>
+
+<p><b>*Record scratch* *Freeze Frame*</b></p>
 
 You're probably wondering how I ended up in this situation.
 

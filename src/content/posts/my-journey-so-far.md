@@ -3,8 +3,6 @@ title: Building conviction– how one false assumption changed my founder journe
 description: My first 100 days as a (kind of) startup founder
 categories: [Article]
 date:   2018-05-26 12:01:00
-image:
-    src:  ../../assets/team.jpg
 ---
 
 ![Siadhal, me and Shahriar working hard](../../assets/team.jpg)*Siadhal, me and Shahriar working hard*

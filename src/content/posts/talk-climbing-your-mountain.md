@@ -7,8 +7,6 @@ image:
 description: Talking about my personal journey at Jam Barcelona
 ---
 
-![Jam Barcelona](../../assets/jam-barcelona.jpg)*Jam Barcelona*
-
 I gave this talk for the first time at [Jam Barcelona](https://www.makingjam.io), to a lovely friendly crowd in an amazing church-like space. I compared the last 18 months of my life to a mountain I climbed with my friends on my stag do (Bachelor party) – with the false peaks and highs and lows entailed.
 
 At the end I attempt to 'rap' along to The Sound of Music, for which I can only apologise.
