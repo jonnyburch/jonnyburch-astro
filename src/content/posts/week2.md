@@ -3,7 +3,7 @@ title: 'Week 2: Lifestyle business'
 categories: [Journal]
 date: 2018-06-13 08:22:00
 image:
-    src:  ../assets/design-thinking.jpg
+    src:  ../../assets/design-thinking.jpg
 ---
 
 _Doh, already missed a Tuesday deadline. Next week I'm in Italy so next update in 2 weeks time, most likely with sunburn._

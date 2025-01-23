@@ -41,5 +41,9 @@
 
   .content-container {
     @apply mx-auto w-full md:max-w-screen-md;
+
+    img {
+      filter: url(#xerox);
+    }
   }
 }

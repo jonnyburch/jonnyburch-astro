@@ -5,14 +5,17 @@ interface Props {
 	description: string;
 	draft: boolean;
 	categories: string[];
-  date: date;
+  date: Date;
+	redirect_to: string;
 }
 
-const { href, title, description, date, draft, categories } = Astro.props;
+const { href, title, description, date, draft, categories, redirect_to } = Astro.props;
+
+let link = redirect_to ? redirect_to : `/${href}`;
 ---
 
 <li class="py-2">
-		<a href={`/${href}`} class="wonky">
+		<a href={link} class="wonky">
 			<p class="pb-2">
 				<span class="font-display font-semibold text-3xl hover-xerox border-b-2 border-black break-words">{title}</span>
 			</p>

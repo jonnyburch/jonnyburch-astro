@@ -3,7 +3,7 @@ title: Am I a Junior Content Designer?
 date: 2019-08-24 10:12:00
 categories: [Journal]
 image:
-  src: ../assets/junior-content-designer.jpg
+  src: ../../assets/junior-content-designer.jpg
   alt: Junior content designer
 description: On writing becoming my highest leverage skill
 ---

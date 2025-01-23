@@ -4,7 +4,7 @@ description:  "An interview with British ex-pat design legend Vince Frost"
 categories: [Interview]
 date:   2011-08-06 12:01:00
 image:
-  src: frost.jpg
+  src: ../../assets/frost.jpg
   alt: "Vince Frost"
 ---
 

@@ -3,7 +3,7 @@ title: 'Week 3-4: Progression'
 categories: [Journal]
 date: 2018-06-29 08:17:00
 image:
-    src:  ../assets/salad.png
+    src:  ../../assets/salad.png
 ---
 
 _Posting on a Friday this week, it's been hella busy, after last week off. May stick to Fridays for now, always a good time for a retro._

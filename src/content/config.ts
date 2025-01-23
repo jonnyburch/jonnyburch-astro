@@ -2,7 +2,7 @@ import { z, defineCollection } from 'astro:content';
 
 const postCollection = defineCollection({
   type: 'content',
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.optional(z.string()),
     categories: z.array(z.string()),
@@ -11,8 +11,9 @@ const postCollection = defineCollection({
     draft: z.optional(z.boolean()),
     image: z.optional(
       z.object({
-        src: z.string(),
+        src: image(),
         alt: z.optional(z.string()),
+        caption: z.optional(z.string()),
     })),
     redirect_to: z.optional(z.string()),
   })

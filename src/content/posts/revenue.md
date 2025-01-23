@@ -3,7 +3,7 @@ title: 'Week 9: Revenue!'
 categories: [Journal]
 date: 2018-08-11 21:27:00
 image:
-    src:  ../assets/muircamp.jpg
+    src:  ../../assets/muircamp.jpg
 description: First paying customers! It's alive...
 ---
 

@@ -3,11 +3,10 @@ title: Holding My Breath
 date: 2019-03-17 12:17:00
 categories: [Journal]
 image:
-    src:  ../assets/reason-workshop.jpg
+    src:  ../../assets/reason-workshop.jpg
+    caption: One of several workshops from the last few months
 description: The Alpha begins. What the hell happened for the last six months?
 ---
-
-![One of several workshops from the last few months](../../assets/reason-workshop.jpg)*One of several workshops from the last few months*
 
 _It turns out the last time I posted a journal update was in August last year. That makes it seven months since you heard what I was up to. Not exactly a 'cadence' — something I'm going to work on improving._
 

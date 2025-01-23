@@ -3,7 +3,7 @@ title: 'Week 1: Doubling down on risk'
 categories: [Journal]
 date: 2018-06-05 22:11:00
 image:
-    src:  ../assets/img/placementman1.jpg
+    src:  ../../assets/placementman1.jpg
 ---
 
 _Note to self: I'm not sure yet how to structure these weekly journals. I know I want to force myself to write, to keep myself honest in the absence of co-founders, but I've never had a diary before. So I'll try a format, and if it doesn't work, I'll change it._

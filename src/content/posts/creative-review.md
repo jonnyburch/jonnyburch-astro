@@ -4,7 +4,7 @@ description:  "The team behind one of the most successful non-celebrity twitter 
 categories: [Interview]
 date:   2011-03-09 12:01:00
 image:
-  src: crhead.jpg
+  src: ../../assets/crhead.jpg
   alt: "Creative Review"
 shout: One Hundred and Fourty
 draft: false

@@ -1,22 +1,31 @@
 ---
 import Layout from './Layout.astro';
+import { Image } from 'astro:assets';
 const { frontmatter } = Astro.props;
+const imageAlt = frontmatter.image.alt ? frontmatter.image.alt : frontmatter.title;
 ---
 <Layout title={frontmatter.title}>
 	<main class="content-container">
+    {frontmatter.image && (
+    <div class="flex flex-col gap-2 relative xl:-mx-16 max-h-[300px] overflow-hidden xerox">
+      <Image src={frontmatter.image.src} alt={imageAlt} class="max-w-full" />
+      {frontmatter.image.caption && (
+        <p class="absolute bottom-2 left-2 bg-peach-100 px-2 py-1 xerox text-sm">{frontmatter.image.caption}</p>
+      )}
+    </div>
+    )}
     <div class="py-8 flex flex-col gap-2">
       <h4 class="text-2xl font-bold">{new Date(frontmatter.date).toDateString()}</h4>
       <h1 class="font-display text-6xl font-bold xerox">{frontmatter.title}</h1>
       <p class="text-xl">{frontmatter.description}</p>
-      {frontmatter.image && <img src={frontmatter.image.src} alt={frontmatter.image.alt} class="max-w-full xerox" />}
+      {frontmatter.categories.length !== 0 && (
+        <span class="">
+          {frontmatter.categories.map((category, index) => (
+            `${category}${index < frontmatter.categories.length - 1 ? ', ' : ''}`
+          ))}
+        </span>
+      )}
     </div>
-    {frontmatter.categories.length !== 0 && (
-      <span class="">
-        {frontmatter.categories.map((category, index) => (
-          `${category}${index < frontmatter.categories.length - 1 ? ', ' : ''}`
-        ))}
-      </span>
-    )}
     <div class="prose lg:prose-xl">
       <slot />
     </div>

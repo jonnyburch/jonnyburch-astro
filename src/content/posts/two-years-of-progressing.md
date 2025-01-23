@@ -3,7 +3,7 @@ title: Two years of progressing
 date: 2020-04-29 01:06:00
 categories: [Article]
 image:
-    src:  ../assets/a-rare-outing.jpg
+    src:  ../../assets/a-rare-outing.jpg
 description: On the eve of a launch, a reflection
 ---
 

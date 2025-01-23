@@ -4,7 +4,7 @@ description: I’m struggling to stick to a plan…
 categories: [Article]
 date: 2018-07-24 09:17:00
 image:
-    src:  ../assets/img/placementman2.jpg
+    src:  ../../assets/placementman2.jpg
 ---
 
 _(Caveat: I’m writing this in under 30 minutes, ignoring my previous format, and listening to Deftones. There's definitely a better version I could write with links and stuff. That's not this.)_

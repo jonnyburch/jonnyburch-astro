@@ -3,7 +3,7 @@ title: 'Week 17: An Indian Summer'
 categories: [Journal]
 date: 2018-10-07 00:16:00
 image:
-    src:  ../assets/pizza.jpg
+    src: ../../assets/pizza.jpg
 description: It's been a wild couple of months. Still haven't launched.
 ---
 

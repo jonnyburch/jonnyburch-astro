@@ -3,7 +3,7 @@ title: 'Growing at work – the importance of progression'
 date: 2019-10-29 11:24:00
 categories: [Talk]
 image:
-    src:  ../assets/jam-london.jpg
+    src:  ../../assets/jam-london.jpg
 description: A conference talk at Jam London
 ---
 

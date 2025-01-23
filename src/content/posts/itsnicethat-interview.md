@@ -28,8 +28,8 @@ AB: Before that, but It's Nice That was getting so much more traction that we ev
 
 WH: Yeah something like that...
 
-<img src="{{ site.baseurl }}../assets/img/alex_cock.jpg">
-<small>Alex drew Will, because he's an illustrator</small>
+![Alex drew Will, because he's an illustrator](../../assets/alex_cock.jpg)
+*Alex drew Will, because he's an illustrator*
 
 _Will is now visibly annoyed. Alex had produced a long and impressively verbose answer with seemingly no adverse effects to his game. Clearly deciding that power would overcome, Will starts incessantly smashing every ball, with mixed results. 9-2 Alex._
 

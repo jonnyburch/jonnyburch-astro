@@ -3,16 +3,16 @@ title: Meeting Mr. Goldie
 description:  "An interview with Drum n Bass legend Goldie"
 categories: [Interview]
 date:   2014-03-22 12:01:00
-img_url: goldie.jpg
-shout: Goldie
+image:
+  src: ../../assets/goldie.jpg
 ---
 
 Goldie, aka Clifford Joseph Price, can safely list amongst his achievements: DJ, producer, actor, reality star (x4), and for the longest part of his career, artist. Both product and founder of the early nineties Jungle and Drum 'n Bass scene, Goldie rose to fame partly through his pioneering 'timestretching' technique and partly due to his more structured classical-esque approach to music-making, allowing his 1995 album _Timeless_ to help progress the genre beyond its previous confines of rave material to a more respected art-form. The title track is a 21 minute epic that literally ebbs and flows like a symphony. (He later blew that out of the water with 71 minute-long _Mother_, released 2 years later.)
 
 This natural ability led him in 2008 to a second place in 'Maestro', the BBC's orchestral conducting reality TV show behind The Great British Bake-off's Sue Perkins, by far his most successful foray into reality TV. Other outings on Celebrity Big Brother (2002), Celebrity Mastermind (2009), Strictly come Dancing (2010) and Come Dine With Me (2010) saw him faring less well. He's also appeared in several films including Guy Ritchies _Snatch_ and Bond meh-fest _The World is not enough_ as well as a two year stint in _Eastenders_.
 
-<img src="{{ site.baseurl }}../assets/img/goldie1.jpg">
-<small>Goldie in his paint room</small>
+![Goldie in his paint room](../../assets/goldie1.jpg)
+*Goldie in his paint room*
 
 However, most importantly Goldie is also a fine artist.
 
@@ -26,8 +26,7 @@ I turned up at Goldie's house with a camera and my laptop to see him bombing out
 
 Finally, photos over, I managed to get him sitting down for a chat about the youth of today, harnessing creativity and where he gets his drive.
 
-<img src="{{ site.baseurl }}../assets/img/goldie2.jpg">
-<small>Goldie's home art gallery</small>
+![Goldie's home art gallery](../../assets/goldie2.jpg)*Goldie's home art gallery*
 
 **I was 9 when Timeless came out and our readership were still swimming around in their dads balls.**
 
@@ -91,8 +90,7 @@ Yeah dyslexia. I've never been able to read well, I used to have to hold a ruler
 
 I think this may be a made up word but I use a Seancic method with music, pulling it vicariously through others. Like a seance, I work with engineers and puppeteer the music together.
 
-<img src="{{ site.baseurl }}../assets/img/goldie3.jpg">
-<small>Lots of cups of tea</small>
+![Lots of cups of tea](../../assets/goldie3.jpg)*Lots of cups of tea*
 
 **What inspires you?**
 
