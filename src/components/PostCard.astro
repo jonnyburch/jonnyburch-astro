@@ -11,13 +11,13 @@ interface Props {
 const { href, title, description, date, draft, categories } = Astro.props;
 ---
 
-<li class="">
+<li class="py-2">
 		<a href={`/${href}`} class="wonky">
 			<p class="pb-2">
 				<span class="font-display font-semibold text-3xl hover-xerox border-b-2 border-black break-words">{title}</span>
 			</p>
 			{description && (
-				<p class="text-lg pb-2"> — {description}</p>
+				<p class="text-lg"> — {description}</p>
 			)}
 			<p class="text-sm opacity-50">
 				{categories.length !== 0 && (
@@ -29,9 +29,9 @@ const { href, title, description, date, draft, categories } = Astro.props;
 					</>
 				)}
 				{date.toDateString()}
+				{draft === true && (
+					<span class="text-red-500">Draft</span>
+				)}
 			</p>
-			{draft === true && (
-				<span class="text-red-500">Draft</span>
-			)}
 		</a>
 </li>

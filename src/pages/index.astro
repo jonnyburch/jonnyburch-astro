@@ -2,7 +2,7 @@
 import {Content as Homepage} from '../components/Homepage.md';
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import PostCard from '../components/PostCard.astro';
+import PostList from '../components/PostList.astro';
 import { Image } from 'astro:assets';
 import Jonny from '../assets/jonny.png';
 
@@ -29,12 +29,7 @@ const allPosts = await getCollection('posts', ({ data }) => {
 			<Homepage />
 		</div>
 		<div class="w-full max-w-prose">
-			<ul class="flex flex-col gap-4 py-4">
-				{allPosts
-					.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-					.map((post) => <PostCard title={post.data.title} date={post.data.date} href={post.slug} description={post.data.description} draft={post.data.draft} categories={post.data.categories} />)
-				}
-			</ul>
+			<PostList posts={allPosts} title="Posts" />
 		</div>
 	</main>
 </Layout>
