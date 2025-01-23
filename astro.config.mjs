@@ -1,16 +1,31 @@
 import { defineConfig } from 'astro/config';
-import cloudflare from "@astrojs/cloudflare";
 import tailwindcss from '@tailwindcss/vite';
+import opengraphImages, { presets } from "astro-opengraph-images";
+import { customOgMediaLayout } from "./src/customRenderer";
 
-// https://astro.build/config
+
+import opengraphImages from "astro-opengraph-images";
+
 export default defineConfig({
-  site: "https://toy.studio",
-  adapter: cloudflare({
-    platformProxy: {
-      enabled: true
-    }
-  }),
+  site: "https://jonnyburch.com",
+
   vite: {
     plugins: [tailwindcss()],
-  }
+  },
+
+  integrations: [
+    opengraphImages({
+      options: {
+        fonts: [
+          {
+            name: "Inter Variable",
+            weight: 400,
+            style: "normal",
+            data: fs.readFileSync("node_modules/@fontsource/inter/files/inter-latin-400-normal.woff"),
+          },
+        ],
+      },
+      render: presets.simpleBlog,
+    }),
+  ]
 });

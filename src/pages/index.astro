@@ -7,13 +7,12 @@ import { Image } from 'astro:assets';
 import Jonny from '../assets/jonny.png';
 
 const title = "Jonny Burch"
-const subtitle = "A person"
-const description = "Personal website."
+const description = "Designer, product wonk, founder and reader of internets"
 const allPosts = await getCollection('posts', ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;});
 ---
 
-<Layout title={`${title} — ${subtitle}`} description={description}>
+<Layout title={`${title}`} description={description}>
 	<main class="pt-8">
 		<div class="crazy flex pb-8 flex-wrap">
 			<Image src={Jonny} alt="J" class="w-1/5 max-w-36" />
