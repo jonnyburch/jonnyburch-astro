@@ -2,7 +2,8 @@
 import Layout from './Layout.astro';
 import { Image } from 'astro:assets';
 const { frontmatter } = Astro.props;
-const imageAlt = frontmatter.image.alt ? frontmatter.image.alt : frontmatter.title;
+
+const imageAlt = frontmatter.image?.alt ? frontmatter.image.alt : frontmatter.title;
 ---
 <Layout title={frontmatter.title}>
 	<main class="content-container">
@@ -26,7 +27,7 @@ const imageAlt = frontmatter.image.alt ? frontmatter.image.alt : frontmatter.tit
         </span>
       )}
     </div>
-    <div class="prose lg:prose-xl">
+    <div class="prose-custom">
       <slot />
     </div>
   </main>

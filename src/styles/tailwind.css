@@ -36,11 +36,16 @@
   }
 
   .prose-custom {
-    @apply prose prose-h1:text-aubergine-700 prose-p:text-aubergine-700 prose-a:text-aubergine-700;
+    @apply font-normal prose xl:prose-xl prose-h1:text-aubergine-700 prose-h2:text-aubergine-700 prose-h3:text-aubergine-700 prose-h4:text-aubergine-700 prose-p:text-aubergine-700 prose-li:text-aubergine-700 prose-a:text-aubergine-700 prose-strong:text-aubergine-700 prose-ul:text-aubergine-700 prose-ol:text-aubergine-700 prose-blockquote:text-aubergine-700 prose-img:text-aubergine-700 prose-ul:marker:text-aubergine-700 prose-ol:marker:text-aubergine-700;
   }
 
   .content-container {
     @apply mx-auto w-full md:max-w-screen-md;
+
+    h1, h2, h3, h4, h5, h6 {
+      filter: url(#xerox);
+      @apply text-aubergine-700 font-bold;
+    }
 
     img {
       filter: url(#xerox);
