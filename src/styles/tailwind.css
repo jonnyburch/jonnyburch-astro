@@ -25,18 +25,28 @@
 
   html {
     @apply subpixel-antialiased bg-peach-100 text-aubergine-700;
-    filter: url(#wonky);
   }
 
   p a, li a {
     @apply transition-all duration-150;
   }
+
+  p a, li a {
+    @apply transition-all duration-150;
+    filter: url(#wonky);
+  }
   p a:hover, li a:hover {
     filter: url(#xerox);
+    &.not-hover-xerox {
+      filter: url(#wonky);
+    }
   }
 
   .prose-custom {
-    @apply font-normal prose xl:prose-xl prose-h1:text-aubergine-700 prose-h2:text-aubergine-700 prose-h3:text-aubergine-700 prose-h4:text-aubergine-700 prose-p:text-aubergine-700 prose-li:text-aubergine-700 prose-a:text-aubergine-700 prose-strong:text-aubergine-700 prose-ul:text-aubergine-700 prose-ol:text-aubergine-700 prose-blockquote:text-aubergine-700 prose-img:text-aubergine-700 prose-ul:marker:text-aubergine-700 prose-ol:marker:text-aubergine-700 prose-blockquote:text-aubergine-700 prose-blockquote:font-bold prose-blockquote:border-aubergine-700 prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:text-3xl prose-blockquote:not-italic;
+    @apply font-normal prose xl:prose-xl prose-h1:text-aubergine-700 prose-h2:text-aubergine-700 prose-h3:text-aubergine-700 prose-h4:text-aubergine-700 prose-li:text-aubergine-700 prose-a:text-aubergine-700 prose-strong:text-aubergine-700 prose-ul:text-aubergine-700 prose-ol:text-aubergine-700 prose-blockquote:text-aubergine-700 prose-img:text-aubergine-700 prose-ul:marker:text-aubergine-700 prose-ol:marker:text-aubergine-700 prose-blockquote:text-aubergine-700 prose-blockquote:font-bold prose-blockquote:border-aubergine-700 prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:text-3xl prose-blockquote:not-italic;
+    p, li {
+      @apply md:text-lg lg:text-xl leading-relaxed text-aubergine-700;
+    }
     .blockquote p {
       filter: url(#xerox);
     }
