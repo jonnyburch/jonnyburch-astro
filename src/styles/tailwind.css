@@ -70,7 +70,11 @@
   .content-container {
     @apply mx-auto w-full md:max-w-screen-md;
 
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2 {
+      filter: url(#xerox);
+      @apply text-aubergine-700 font-bold;
+    }
+    h3, h4 {
       filter: url(#xerox);
       @apply text-aubergine-700 font-bold;
     }

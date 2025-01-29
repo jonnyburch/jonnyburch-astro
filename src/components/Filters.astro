@@ -13,9 +13,9 @@
     </filter>
     <filter id="xerox">
         <feTurbulence baseFrequency="0.01 0.02" numOctaves="2" result="t0"></feTurbulence>
-        <feDisplacementMap in="SourceGraphic" in2="t0" scale="4" result="d0"></feDisplacementMap>
+        <feDisplacementMap in="SourceGraphic" in2="t0" scale="2" result="d0"></feDisplacementMap>
         <feComposite in="SourceGraphic" in2="d0" operator="atop" result="0"></feComposite>
-        <feTurbulence baseFrequency="1" numOctaves="2" result="t1"></feTurbulence>
+        <feTurbulence baseFrequency="1" numOctaves="1" result="t1"></feTurbulence>
         <feDisplacementMap in="0" in2="t1" scale="1" result="d1"></feDisplacementMap>
         <feComposite in="0" in2="d1" operator="atop" result="1"></feComposite>
         <feOffset in="1" dx="-3" dy="-3"/>

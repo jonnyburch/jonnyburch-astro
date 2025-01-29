@@ -11,7 +11,7 @@ const livePosts = posts.filter(({ data }) => {
     <ul>
       {livePosts
         .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-        .map((post) => <PostCard title={post.data.title} date={post.data.date} href={post.slug} description={post.data.description} draft={post.data.draft} categories={post.data.categories} redirect_to={post.data.redirect_to} />)
+        .map((post) => <PostCard title={post.data.title} date={post.data.date} href={post.slug} description={post.data.description} draft={post.data.draft} categories={post.data.categories} redirect_to={post.data.redirect_to} image={post.data.image} />)
       }
     </ul>
   </>
