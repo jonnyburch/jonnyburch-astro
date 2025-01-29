@@ -3,7 +3,7 @@ title: "Introducing: Found Up North"
 description: "Because The North needs more founder community"
 categories: [Journal]
 date: 2025-01-29
-draft: true
+draft: false
 image:
     src: ../../assets/foundupnorth.png
     alt: Found Up North
