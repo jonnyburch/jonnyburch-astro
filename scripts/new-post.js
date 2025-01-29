@@ -19,9 +19,9 @@ categories: [Journal]
 date: ${date}
 draft: true
 image:
-    src:
-    alt:
-    caption:
+    src: ../../assets/salad.png
+    alt: ""
+    caption: ""
 ---
 
 `;
