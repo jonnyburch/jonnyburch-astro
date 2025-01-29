@@ -3,7 +3,8 @@ title: It's really Nice That
 description:  "An interview with Will Hudson and Alex Bec of It’s Nice That"
 categories: [Interview]
 date:   2013-05-14 12:01:00
-img_url: int.jpg
+image:
+     src: ../../assets/int.jpg
 ---
 
 Every issue of ShellsuitZombie we interview a talented duo while playing a pub game. Having played darts, pool and, ahem, ten pin bowling, the logical next step was ping pong.

@@ -3,7 +3,7 @@ title: 'Lost, but making good time'
 date: 2019-08-10 09:39:00
 categories: [Journal]
 image:
-    src:  ../../assets/lost.jpg
+    src: ../../assets/lost.jpg
 description: Switching to sales as a non sales-person
 ---
 

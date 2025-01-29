@@ -3,7 +3,7 @@ title: I have a co-founder!
 date: 2019-07-01 20:43:00
 categories: [Journal]
 image:
-    src:  ../../assets/neil-chat.png
+    src: ../../assets/neil-chat.png
     caption: The conversation that started it all, back in December 2018
 description: It's taken a long time but is totally worth the wait
 ---

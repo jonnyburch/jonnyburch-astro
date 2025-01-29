@@ -3,7 +3,8 @@ title: The great ape Dave Brown (Bollo)
 description:  "An interview with Dave Brown, AKA The Mighty Boosh's Ape 'Bollo'"
 categories: [Interview]
 date:   2011-06-05 12:01:00
-img_url: bollo.jpg
+image:
+  src: ../../assets/bollo.jpg
 shout: I, Bollo
 ---
 

@@ -3,7 +3,7 @@ title: Holding My Breath
 date: 2019-03-17 12:17:00
 categories: [Journal]
 image:
-    src:  ../../assets/reason-workshop.jpg
+    src: ../../assets/reason-workshop.jpg
     caption: One of several workshops from the last few months
 description: The Alpha begins. What the hell happened for the last six months?
 ---

@@ -2,8 +2,8 @@
 description:  "Tim Key is weird."
 categories: [Interview]
 date:   2013-05-14 12:01:00
-img_url: timkey_top.jpg
-img_small_url: timkey.jpg
+image:
+  src: ../../assets/timkey_top.jpg
 ---
 As is the tradition at ShellsuitZombie magazine, we like to interview our stars while playing a minor sport. First it was pool, then darts. For this issue we invited multi-award winning comedian and poet Tim Key to join us in a round of ten pin bowling. Except, as is tradition, it’s all a lie. Well, unless he was emailing me from Hollywood Bowl in North Finchley. Which would be an extraordinary coincidence.
 

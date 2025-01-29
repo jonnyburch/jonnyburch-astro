@@ -3,7 +3,7 @@ title: The power of naïve optimism
 date: 2019-09-21 08:47:00
 categories: [Journal]
 image:
-    src:  ../../assets/naive-optimism.jpg
+    src: ../../assets/naive-optimism.jpg
 description: When is it OK to believe that everything will be OK?
 ---
 

@@ -3,7 +3,8 @@ title: Placement Man
 description:  "He does the placements so you don't have to"
 categories: [Article]
 date:   2011-08-06 12:01:00
-img_url: pmhead.jpg
+image:
+  src: ../../assets/pmhead.jpg
 ---
 
 

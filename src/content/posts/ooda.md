@@ -3,7 +3,8 @@ title: Observe Orient Decide Act (and repeat)
 description: How anyone can use an O.O.D.A. loop to get to answers quicker
 categories: [Article]
 date:   2015-01-03 12:01:00
-img_url: ooda.png
+image:
+     src: ../../assets/ooda.png
 ---
 
 *This is part of a series about meaningful side projects: read the first post [here](https://medium.com/p/528ac83bff2). It’s aimed largely at those designing digital products but may be relevant for anyone creating user-facing stuff — for example film-makers, writers, fine artists, photographers etc. as well as designers.*

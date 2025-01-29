@@ -3,7 +3,7 @@ title: 'Climbing your mountain'
 date: 2019-09-30 11:23:00
 categories: [Talk]
 image:
-    src:  ../../assets/jam-barcelona.jpg
+    src: ../../assets/jam-barcelona.jpg
 description: Talking about my personal journey at Jam Barcelona
 ---
 

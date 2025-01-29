@@ -3,7 +3,8 @@ title: Aspiring to design in a product team?
 description: Drop your one day side project and stick with something for a year.
 categories: [Article]
 date:   2015-01-03 12:01:00
-img_url: ooda.png
+image:
+  src: ../../assets/ooda.png
 ---
 
 **There’s limited value in 365 half-baked thoughts, but lots of learnings in one big success (or failure).**
