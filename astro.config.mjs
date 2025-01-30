@@ -1,9 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-import opengraphImages, { presets } from "astro-opengraph-images";
-
-
 import opengraphImages from "astro-opengraph-images";
+import { customOgMediaLayout } from "./src/customRenderer";
 
 export default defineConfig({
   site: "https://jonnyburch.com",
@@ -16,14 +14,20 @@ export default defineConfig({
       options: {
         fonts: [
           {
-            name: "Inter Variable",
+            name: "Inter",
             weight: 400,
             style: "normal",
-            data: fs.readFileSync("node_modules/@fontsource/inter/files/inter-latin-400-normal.woff"),
+            data: fs.readFileSync("./src/assets/fonts/Inter-Regular.ttf"),
+          },
+          {
+            name: "Inter",
+            weight: 700,
+            style: "normal",
+            data: fs.readFileSync("./src/assets/fonts/Inter-Bold.ttf"),
           },
         ],
       },
-      render: presets.simpleBlog,
+      render: customOgMediaLayout,
     }),
   ]
 });

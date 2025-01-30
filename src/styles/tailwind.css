@@ -2,12 +2,17 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-sans: "Inter", sans-serif;
+  --font-sans: Inter, sans-serif;
   --color-peach-100: #f7e0d4;
   --color-aubergine-700: rgb(5, 66, 54);
 }
 
 @layer base {
+  @supports (font-variation-settings: normal) {
+    :root {
+      --font-sans: InterVariable, sans-serif;
+    }
+  }
 
   .crazy {
     filter: url(#crazy);
