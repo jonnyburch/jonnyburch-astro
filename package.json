@@ -16,6 +16,8 @@
     "astro": "^5.1.8",
     "astro-opengraph-images": "^1.11.7",
     "astro-seo": "^0.8.4",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.14.0",
     "tw-to-css": "^0.0.12"
   },
   "devDependencies": {
