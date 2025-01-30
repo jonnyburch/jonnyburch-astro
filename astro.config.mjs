@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import opengraphImages from "astro-opengraph-images";
-import { customOgMediaLayout } from "./src/customRenderer";
+import { customOgMediaLayout } from "./src/customRenderer.tsx";
 
 export default defineConfig({
   site: "https://jonnyburch.com",
