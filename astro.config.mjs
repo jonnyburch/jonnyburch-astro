@@ -1,18 +1,16 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import opengraphImages, { presets } from "astro-opengraph-images";
-import { customOgMediaLayout } from "./src/customRenderer";
 
 
 import opengraphImages from "astro-opengraph-images";
 
 export default defineConfig({
   site: "https://jonnyburch.com",
-
+  trailingSlash: "never",
   vite: {
     plugins: [tailwindcss()],
   },
-
   integrations: [
     opengraphImages({
       options: {
