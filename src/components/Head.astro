@@ -9,8 +9,9 @@ import { SEO } from "astro-seo";
 
 const { title, description = "A person" } = Astro.props;
 const { url, site } = Astro;
-const ogImagePath = getImagePath({ url, site });
-const openGraphImageUrl = ogImagePath.replace(/\.png$/, '/index.png');
+
+var ogImagePath = getImagePath({ url, site });
+var openGraphImageUrl = ogImagePath.replace("/index", "").replace(/\.png$/, '/index.png');
 ---
 
 
