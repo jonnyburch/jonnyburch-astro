@@ -1,5 +1,5 @@
 ---
-title: "The entrepreneurial escape hatch?"
+title: "The entrepreneurial escape hatch"
 description: "On entrepreneurship in the age of AI"
 categories: [Journal]
 date: 2025-03-06
