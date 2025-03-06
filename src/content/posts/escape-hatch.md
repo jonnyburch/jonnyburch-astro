@@ -25,3 +25,6 @@ This has always been the entrepreneur's dilemma in some form: how to carve out s
 Perhaps we're witnessing not just a technological revolution but an evolution in entrepreneurship itself. One where the successful founders aren't just those who can build products or services, but those who can harness AI whilst maintaining that uniquely human spark that makes a business connect with actual people.
 
 For now, I'm taking small comfort in the fact that while AI might replace many jobs, it can't replace the entrepreneurial spirit. At least not until it develops an ego and a penchant for risky financial decisions, anyway.
+
+
+*I'm allowed to make this joke, as a designer
