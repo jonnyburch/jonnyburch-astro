@@ -5,9 +5,9 @@ categories: [Article]
 date: 2025-04-04
 draft: true
 image:
-    src: ../../assets/blockchain.webp
-    alt: "Blockchain connections visualization"
-    caption: "The interconnected world of Model Context Protocol"
+    src: ../../assets/mcps-test.png
+    alt: "Claude screenshot showing MCPs in action"
+    caption: "Claude doing the do"
 ---
 
 ### Introduction: What is Model Context Protocol (MCP)?
