@@ -1,45 +1,53 @@
 ---
 title: "My first dip into MCPs"
-description: "Exploring the world of Multi-Chain Protocols"
+description: "Exploring the world of Model Context Protocol"
 categories: [Article]
 date: 2025-04-04
 draft: true
 image:
     src: ../../assets/blockchain.webp
     alt: "Blockchain connections visualization"
-    caption: "The interconnected world of multi-chain protocols"
+    caption: "The interconnected world of Model Context Protocol"
 ---
 
-I've been interested in blockchain technology for a while now, but I've mostly stayed on the sidelines watching developments unfold. Recently though, I decided it was time to get my hands dirty and explore Multi-Chain Protocols (MCPs) to better understand how they're shaping the future of decentralized systems.
+### Introduction: What is Model Context Protocol (MCP)?
 
-### What are MCPs anyway?
+I keep hearing the term Model Context Protocol (MCP) popping up, often wrapped in the kind of hype that makes you both curious and skeptical. Described as 'an open protocol that standardizes how applications provide context to LLMs' ([https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)), the promise is big: think USB-C, but for plugging AI into data and tools.
 
-For those unfamiliar, Multi-Chain Protocols are systems designed to enable interoperability between different blockchain networks. Think of them as bridges that allow assets and data to flow between otherwise isolated blockchain islands. As the blockchain ecosystem has grown more fragmented, with numerous chains offering different advantages, the need for these cross-chain solutions has become increasingly clear.
+As someone trying to figure out where AI tooling is *actually* heading beyond the buzzwords, I decided it was time to get my hands dirty and share my initial thoughts.
 
-The promise is compelling: seamless asset transfers, composable applications that leverage the strengths of multiple chains, and an end to the siloed ecosystem that has limited blockchain adoption.
+### My Starting Point: Filesystem Access
 
-### My first steps
+My first concrete step into the MCP world was enabling filesystem access within Claude Desktop. This felt like a tangible way to see the protocol in action – allowing the AI to interact directly with local files seemed like a powerful and practical use case.
 
-My journey began with researching the major players in the space. Projects like Polkadot, Cosmos, and Chainlink have been pioneering different approaches to the multi-chain future, each with their own philosophy on how interconnection should work.
+It was straightforward enough to toggle on and add the small config for, and immediately opened up possibilities for referencing local documents or codebases directly in my interactions. I tested it by creating the file in the correct folder, with correct frontmatter, for this here blog post, directly from the claude UI. Claude took a couple of attempts to find the right folder but it searched, checked frontmatter from my other posts and created the file fairly efficiently. Cool - but not that much quicker than me running my `blog post` command in Cursor.
 
-I started small, setting up wallets on a few different chains and using cross-chain bridges to move small amounts of assets between them. The experience was illuminating – sometimes frustratingly complex but occasionally surprisingly smooth.
+### Initial Impressions: Powerful but Early
 
-### Challenges I encountered
+This is where the "early days" feeling kicked in. Despite being technically inclined, understanding the server side of MCP wasn't immediately obvious. The documentation mentions a client-server architecture ([https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)), but the practical steps of creating, hosting, and connecting a custom server felt murky – **like trying to follow assembly instructions written in a language I only half-understand.** It highlighted a stark gap between the promise of MCPs and the actual developer experience. And that's just it - it's still a developer-centric experience - as I discovered when going beyond Claude's interface.
 
-What struck me immediately was the varying user experience across different protocols. Some bridges felt intuitive and reliable, while others required technical knowledge that would likely alienate newcomers. The fragmentation isn't just at the protocol level – it extends to the user experience as well.
+Admittedly I only gave it a further 20 minutes, but I was expecting to be able to add the git mcp so I could create a branch for my new blog post, push to my remote and maybe even publish. I immediately hit various walls of MCPs written in python requiring an MCP server. Hmm.
 
-Security concerns also quickly became apparent. Cross-chain bridges have been notorious targets for exploits, with hundreds of millions lost in various hacks. As I transferred assets, I couldn't help but feel a twinge of anxiety waiting for confirmations.
+No doubt I'll work this out, but MCPs are still outside the ability of most. Maybe that's ok, if what they're replacing is APIs. But I digress.
 
-### The potential is enormous
+### The Hype vs. Reality: Seeing the Potential
 
-Despite the challenges, the potential of truly interoperable blockchain systems is hard to overstate. When I managed to execute my first cross-chain smart contract interaction – triggering an action on Ethereum that then executed a corresponding function on another chain – I had one of those "aha" moments that make exploration worthwhile.
+Despite it not being a super easy setup, I could immediately feel the potential for this technology.
 
-The ability to leverage the security of one chain, the speed of another, and the specialized features of a third opens up possibilities that simply don't exist in single-chain environments.
+Perhaps these interfaces become primarily documented *for* and consumed *by* AI agents via protocols like MCP, maybe even **background noise** primarily consumed *by* AI agents via protocols like MCP.
 
-### Where do we go from here?
+The AI could seamlessly pull data from a local database, query a remote service via its MCP integration, and synthesize information without the user (or even the developer, beyond the initial setup) needing to manage individual API calls and data transformations.
 
-As someone just dipping their toes into this technology, I'm struck by both its promise and its current limitations. The projects making the most headway seem to be those focusing not just on the technical challenges of interoperability but also on creating intuitive user experiences.
+This aligns with the promise of flexibility and integration that MCP [aims for](https://modelcontextprotocol.io/introduction). If the user experience catches up to the vision, it could fundamentally change how we think about software interacting with data and services.
 
-For MCPs to achieve mainstream adoption, they'll need to become invisible – users shouldn't need to understand the complexity of moving between chains any more than they need to understand TCP/IP when browsing the web.
+And for anyone that's had to parse the rats nest of a badly documented API, it sure feels like a game changer.
 
-I'll be continuing my exploration of this space, and I'm excited to see how these protocols evolve. If you've had your own experiences with cross-chain technologies, I'd love to hear about them. The multi-chain future is being built now, and it's fascinating to watch it unfold.
+### Next Steps & The Road Ahead
+
+This initial dip has only scratched the surface. So, my next mission is to actually dig into the server development side.
+
+I plan to explore the available SDKs (Python, TypeScript etc. mentioned on the site) and check out the [example servers](https://modelcontextprotocol.io/introduction#examples) to get a better handle on how they're built and deployed.
+
+While MCP feels like it's in its nascent stages with room for improvement in developer experience and tooling clarity, the core concept is powerful. Standardizing context exchange for LLMs feels like a necessary evolutionary step. I'm excited to continue learning and experimenting in this space and will share more as I go.
+
+It feels a bit like navigating without a map right now, but the potential destination seems worth the trek. I'll report back on what I find.
