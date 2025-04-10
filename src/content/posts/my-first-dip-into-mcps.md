@@ -3,7 +3,7 @@ title: "My first dip into MCPs"
 description: "Exploring the world of Multi-Chain Protocols"
 categories: [Article]
 date: 2025-04-04
-draft: false
+draft: true
 image:
     src: ../../assets/blockchain.webp
     alt: "Blockchain connections visualization"
