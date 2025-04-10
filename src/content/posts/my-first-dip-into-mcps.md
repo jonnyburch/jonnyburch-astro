@@ -3,28 +3,28 @@ title: "My first dip into MCPs"
 description: "Exploring the world of Model Context Protocol"
 categories: [Article]
 date: 2025-04-04
-draft: true
-image:
-    src: ../../assets/mcps-test.png
-    alt: "Claude screenshot showing MCPs in action"
-    caption: "Claude doing the do"
+draft: false
 ---
 
 ### Introduction: What is Model Context Protocol (MCP)?
 
-I keep hearing the term Model Context Protocol (MCP) popping up, often wrapped in the kind of hype that makes you both curious and skeptical. Described as 'an open protocol that standardizes how applications provide context to LLMs' ([https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)), the promise is big: think USB-C, but for plugging AI into data and tools.
+I keep hearing the term Model Context Protocol (MCP) popping up, often wrapped in the kind of [breathless tech-bro hype](https://x.com/sundarpichai/status/1910082615975313788) that makes even the broader AI movement look slow moving. Described as 'an open protocol that standardizes how applications [provide context to LLMs](https://modelcontextprotocol.io/introduction)', the promise is big: think USB-C, but for plugging AI into data and tools.
 
-As someone trying to figure out where AI tooling is *actually* heading beyond the buzzwords, I decided it was time to get my hands dirty and share my initial thoughts.
+As someone trying to figure out where AI tooling is *actually* heading beyond the buzzwords, and given Anthropic's protocol is now being adopted by Google and openAI, I decided it was time to get my hands dirty and explore.
 
 ### My Starting Point: Filesystem Access
 
 My first concrete step into the MCP world was enabling filesystem access within Claude Desktop. This felt like a tangible way to see the protocol in action – allowing the AI to interact directly with local files seemed like a powerful and practical use case.
 
-It was straightforward enough to toggle on and add the small config for, and immediately opened up possibilities for referencing local documents or codebases directly in my interactions. I tested it by creating the file in the correct folder, with correct frontmatter, for this here blog post, directly from the claude UI. Claude took a couple of attempts to find the right folder but it searched, checked frontmatter from my other posts and created the file fairly efficiently. Cool - but not that much quicker than me running my `blog post` command in Cursor.
+It was straightforward enough to toggle on and add the small config for, and immediately opened up possibilities for referencing local documents or codebases directly in my interactions.
+
+![Claude screenshot showing MCPs in action](../../assets/mcps-test.png)
+
+I tested it by creating the file in the correct folder, with correct frontmatter, for this here blog post, directly from the claude UI. Claude took a couple of attempts to find the right folder but it searched, checked frontmatter from my other posts and created the file fairly efficiently. Cool - but not that much quicker than me running my `blog post` command in Cursor.
 
 ### Initial Impressions: Powerful but Early
 
-This is where the "early days" feeling kicked in. Despite being technically inclined, understanding the server side of MCP wasn't immediately obvious. The documentation mentions a client-server architecture ([https://modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)), but the practical steps of creating, hosting, and connecting a custom server felt murky – **like trying to follow assembly instructions written in a language I only half-understand.** It highlighted a stark gap between the promise of MCPs and the actual developer experience. And that's just it - it's still a developer-centric experience - as I discovered when going beyond Claude's interface.
+This is where the "early days" feeling kicked in. Despite being technically inclined, understanding the server side of MCP wasn't immediately obvious. The documentation mentions a [client-server architecture](https://modelcontextprotocol.io/introduction), but the practical steps of creating, hosting, and connecting a custom server felt murky – **like trying to follow assembly instructions written in a language I only half-understand.** It highlighted a stark gap between the promise of MCPs and the actual developer experience. And that's just it - it's still a developer-centric experience - as I discovered when going beyond Claude's interface.
 
 Admittedly I only gave it a further 20 minutes, but I was expecting to be able to add the git mcp so I could create a branch for my new blog post, push to my remote and maybe even publish. I immediately hit various walls of MCPs written in python requiring an MCP server. Hmm.
 
