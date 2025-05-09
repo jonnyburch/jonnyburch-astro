@@ -3,18 +3,23 @@ title: "My first dip into MCPs"
 description: "Exploring the world of Model Context Protocol"
 categories: [Article]
 date: 2025-04-04
-draft: false
+draft: true
 ---
 
-### Introduction: What is Model Context Protocol (MCP)?
 
-I keep hearing the term Model Context Protocol (MCP) popping up, often wrapped in the kind of [breathless tech-bro hype](https://x.com/sundarpichai/status/1910082615975313788) that makes even the broader AI movement look slow moving. Described as 'an open protocol that standardizes how applications [provide context to LLMs](https://modelcontextprotocol.io/introduction)', the promise is big: think USB-C, but for plugging AI into data and tools.
+If you're a bit online you'll probably have seen the three letter acronym MCP mentioned with the kind of [breathless tech-bro hype](https://x.com/sundarpichai/status/1910082615975313788) reserved in recent years only for AI and blockchain.
 
-As someone trying to figure out where AI tooling is *actually* heading beyond the buzzwords, and given Anthropic's protocol is now being adopted by Google and openAI, I decided it was time to get my hands dirty and explore.
+Described as 'an open protocol that standardizes how applications [provide context to LLMs](https://modelcontextprotocol.io/introduction)', the promise is big: a standard for AIs to connect to APIs that means you never have to manually integrate an API again.
+
+One thing I've been drawn to amidst the LLM frenzy has been the promise of a democratisation of building the web. As one of my favourite tech explorers [Matt Webb](https://interconnected.org/) writes, as the barriers drop to creation, the web might get weird, or at the very least highly personal again. I'm all for that.
+
+So, as someone trying to figure out where AI tooling is *actually* heading beyond the buzzwords, and given Anthropic's protocol is now being adopted by Google and openAI, I decided it was time to get my hands dirty and explore.
 
 ### My Starting Point: Filesystem Access
 
-My first concrete step into the MCP world was enabling filesystem access within Claude Desktop. This felt like a tangible way to see the protocol in action – allowing the AI to interact directly with local files seemed like a powerful and practical use case.
+I've been a Claude subscriber for six months and have found it the best workhorse for thinking and writing, so my first concrete step into the MCP world was enabling filesystem access within Claude Desktop.
+
+This felt like a tangible way to see the protocol in action – allowing the AI to interact directly with local files seemed like a powerful and practical use case.
 
 It was straightforward enough to toggle on and add the small config for, and immediately opened up possibilities for referencing local documents or codebases directly in my interactions.
 
