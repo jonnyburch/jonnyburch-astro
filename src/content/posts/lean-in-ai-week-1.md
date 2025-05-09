@@ -3,7 +3,7 @@ title: "Lean in"
 description: "Reflections on the importance of actually using AI when trying to understand its impact"
 categories: [Journal]
 date: 2025-05-09
-draft: true
+draft: false
 image:
     src: ../../assets/vibe-week-1.png
     alt: ""
