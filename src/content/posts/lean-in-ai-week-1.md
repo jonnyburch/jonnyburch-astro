@@ -12,7 +12,7 @@ image:
 
 Sometime in April, six designers got together to 'vibe code'. (I was one of those designers).
 
-Tom and I had got chatting about the confluence of our calendars being free for the first time in years, a set of tools we've had on our 'to-try' list for a while and an interest in working together on something. It was Tom who suggested we spend a week keeping each other accountable in a 'vibe hack week'. An absolute sucker for organised fun, I immediately said yes (and probably within a breath suggested we invite others).
+My pal [Tom](https://intentional.partners/) and I had been chatting about the confluence of our calendars being free for the first time in years, a set of tools we've had on our 'to-try' list for a while and an interest in working together on something. It was Tom who suggested we spend a week keeping each other accountable in a 'vibe hack week'. An absolute sucker for organised fun, I immediately said yes (and probably within a breath suggested we invite others).
 
 After all, why bi-vibe when you can sex-vibe?! (weird, might delete this sentence later)
 
