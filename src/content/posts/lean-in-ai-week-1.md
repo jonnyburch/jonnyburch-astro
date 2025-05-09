@@ -6,8 +6,8 @@ date: 2025-05-09
 draft: false
 image:
     src: ../../assets/vibe-week-1.png
-    alt: ""
-    caption: ""
+    alt: "vibers"
+    caption: "Just 6 guys and we're vibin' a good time"
 ---
 
 Sometime in April, six designers got together to 'vibe code'. (I was one of those designers).
@@ -38,7 +38,7 @@ Ask your local software engineer and they'll have an opinion. Developers are at 
 
 But move outside the technical team and the insufferable vibe coding linkedin feed and it's less clear whether to lean in. After all, we're all busy.
 
-And what I've not popped the Kool-Aid yet? What if I think it's all just like NFTs and if I ignore it for long enough it will go away?
+And what if I've not popped the Kool-Aid yet? What if I think it's all just like NFTs and if I ignore it for long enough it will go away?
 
 ## Lean in tho
 
@@ -62,7 +62,7 @@ So how do you lean in?
 
 Carve out time to use AI.
 
-Tom later showed me a paper on the 'Jagged Frontier' of AI. The paper is dense, but [the blog post](https://www.oneusefulthing.org/p/centaurs-and-cyborgs-on-the-jagged) introducting it is not. This paragraph really stood out:
+Tom later showed me a paper on the 'Jagged Frontier' of AI. The paper is dense, but [the blog post](https://www.oneusefulthing.org/p/centaurs-and-cyborgs-on-the-jagged) introducing it is not. This paragraph really stood out:
 
 > AI is weird. No one actually knows the full range of capabilities of the most advanced Large Language Models, like GPT-4. No one really knows the best ways to use them, or the conditions under which they fail. There is no instruction manual. On some tasks AI is immensely powerful, and on others it fails completely or subtly. And, unless you use AI a lot, you won’t know which is which.
 
