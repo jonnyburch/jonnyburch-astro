@@ -41,7 +41,10 @@ But before it disappears from memory, here's a few learnings from my journey.
 
 ## To vibe or to ship?
 
+
 I've been using a personal app to help me remember my friends, family and family-of-friends' birthdays for about 9 months now. For the two years before that I had an airtable setup. I'm just terrible at remembering birthdays, so to have an email in my inbox when it's someone's birthday (or advance warning for important people) can be a lifesaver. I'm at around 60 birthdays now, so there's usually at least 2-3 a month.
+
+![birthdays on web](../../assets/birthdays-web.png)*Birthdays on web*
 
 Quite quickly when we started we discussed our personal goals for the week and split into 'people who want to just learn with no particular goal' and 'people who want to ship something specific'. I was definitely in the latter camp.
 
@@ -49,11 +52,11 @@ I've always wanted to build an iOS app. I was getting into tech when the app sto
 
 So I went into this week with one goal - to get an app into testflight.
 
-In retrospect I was setting myself up for a fail here, especially as I hadn't applied for an apple developer account yet. And that was going to prove the least of my issues.
+In retrospect I was setting myself up for a fail here, especially as I hadn't applied for an Apple developer account yet. And that was going to prove the least of my issues.
 
 ## A smooth start
 
-First thing after kickoff I applied for the apple developer account - 48 hours to approval. That would put me at Wednesday midday before even paying up and submitting a testflight build for approval.
+First thing after kickoff I applied for the Apple developer account - 48 hours to approval. That would put me at Wednesday midday before even paying up and submitting a testflight build for approval.
 
 Undeterred, I set about building an API on my rails web app.
 
@@ -85,7 +88,7 @@ _Lesson here: I suspect for anyone trying to vibe code, but especially if you're
 
 ## Day 3 - let's do some marketing?!
 
-I didn't do any marketing. However, an invite for Manus, a tool that I'd signed up for a while back, dropped in my inbox. So frustrated was I with banging my head against Xcode that I clicked.
+Nah, of course I didn't do any marketing. However, an invite for [Manus](https://manus.im), a tool that I'd signed up for a while back, dropped in my inbox. So frustrated was I with banging my head against Xcode that I clicked.
 
 Manus's pitch was/is that it's a smart agent that can use a computer. It's quite jolly actually, you give it instructions and then it writes its own plan, asks you to approve then gets to work. You can watch it using its little computer, writing notes for itself and updating the plan, before delivering the final result.
 
@@ -93,10 +96,28 @@ Manus's pitch was/is that it's a smart agent that can use a computer. It's quite
 
 So I thought, let's use some Manus magic to come up with a Tiktok strategy for my app. After working on it for about 20 minutes, searching the web and compiling a report, it asked me if I wanted it as a website. Obviously! [Here it is](https://uayqfays.manus.space/).
 
-I should probably drop this on linkedin with a 'reply with Tiktok to get it in your inbox'. Seems about that level of quality.
+_I should probably drop this on linkedin with a 'reply with Tiktok to get it in your inbox'. Seems about that level of quality._
 
 Regardless, this felt like an easy win and a good dopamine hit. And it worked, I'm now a paid up subscriber. It's pretty expensive as a service, but they keep giving me more free credits. Ride the VC money-bus!
 
+Thursday brought with it a final push on the iOS app. I still didn't have a developer account so I'd lost all hope of getting my app onto a real phone, but I could still make progress on functionality.
+
+Cursor and I got back into a vibe again when we started integrating the API into some UI and styling it. I learned early on that Tailwind, my styling library of choice, is not that great a choice for react native — so I went for Tamagui (thanks Josh for the steer!). It ended up not really mattering as I didn't write any of the styling anyway - I just generated an image or two on chatGPT to use as some backgrounds and the AI basically did the rest.
+
+![vibed-ios](../../assets/vibed-ios.png)*Vibed iOS styling (I'd share more but at the time of writing the app doesn't run...)*
+
+Honestly I don't love the resulting UI (I think I still prefer the web one, which I also don't love), but whatever. It looked like a thing by the end.
+
+I'll probably keep hacking on this, and I now do have a developer account so watch out for a testflight build...
+
 ## Accountability and shared learnings
 
-Thursday brought with it a final push on the iOS app. I still didn't have a developer account
+A few things stood out about the week for me.
+
+1. Vibe coding is fun, but if you're trying to build something you intend to really work (as I did with Birthdays) it's not going to get you the whole way. It massively sped me up in safe, well documented "grunt-work' type tasks, but barely helped with gnarlier stuff. Which is a pity because that's the stuff I want to avoid.
+2. Across the group we covered a lot of ground - from true vibe coding tools like lovable and replit to vibing with voice, from fairly technical to barely technical people. We learnt and discussed together, both the practical issues and the implications and the feelings we got from working in this way. Doing it as a group was invaluable and made it a whole load more fun.
+3. I'm pretty certain that we're nowhere near the ceiling of where this technology will go. The biggest challenge be a technical one, but a generation of people used to working in one way having to adapt to work in another. Similar to suddenly going remote in 2020, this just feels categorically different as a way of working. Some will love it, many won't.
+
+## What next?
+
+I originally wrote a whole other post on the end of this one, but some editorial guidance (thanks Tom) has moved it over [here](/lean-in). Please do give it a read and tell me what you think!
