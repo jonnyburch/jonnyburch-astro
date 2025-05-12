@@ -1,29 +1,11 @@
 ---
-title: "Lean in"
-description: "Reflections on the importance of actually using AI when trying to understand its impact"
-categories: [Journal]
-date: 2025-05-09
-draft: false
-image:
-    src: ../../assets/vibe-week-1.png
-    alt: "vibers"
-    caption: "Just 6 guys and we're vibin' a good time"
+title: "Lean In"
+description: "A reflection on the importance of engaging with AI"
+categories: [Article]
+date: 2025-05-12
+draft: true
 ---
 
-Sometime in April, six designers got together to 'vibe code'. (I was one of those designers).
-
-My pal [Tom](https://intentional.partners/) and I had been chatting about the confluence of our calendars being free for the first time in years, a set of tools we've had on our 'to-try' list for a while and an interest in working together on something. It was Tom who suggested we spend a week keeping each other accountable in a 'vibe hack week'. An absolute sucker for organised fun, I immediately said yes (and probably within a breath suggested we invite others).
-
-After all, why bi-vibe when you can sex-vibe?! (weird, might delete this sentence later)
-
-Hack to the future was born.
-
-![Hack to the future](../../assets/hack-to-the-future.png)*Hack to the future*
-
-
-[Tom](https://newsletter.intentional.partners/p/proof-of-vibes) and [Noam](https://noamso.medium.com/learnings-from-building-mighty-veg-a-4-day-vibe-coding-experiment-99b515b49462) have written excellently about their experiences of the week — short version is we had a lot of fun, everyone really leaned in, I think I learnt as much from other people's experiences as my own (often frustrating, overly ambitious) attempts.
-
-![Vibers](../../assets/vibe-week-1.png)*Vibers*
 
 
 What Tom and I were left with alongside two half finished apps, was a feeling that 'more people should be doing this'.
