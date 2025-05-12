@@ -1,6 +1,6 @@
 ---
 title: "A(I) Hack Week"
-description: "Reflections on the importance of actually using AI when trying to understand its impact"
+description: "Just 6 guys and we're vibin' a good time"
 categories: [Article]
 date: 2025-05-09
 draft: false
