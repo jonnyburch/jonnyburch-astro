@@ -3,12 +3,12 @@ title: "Lean In"
 description: "A reflection on the importance of engaging with AI"
 categories: [Article]
 date: 2025-05-12
-draft: true
+draft: false
 ---
 
+Check out [this post](/ai-hack-week) for part one of this post. I split it in two as this is the 'ranty bit'.
 
-
-What Tom and I were left with alongside two half finished apps, was a feeling that 'more people should be doing this'.
+But TL;DR, [Tom](https://newsletter.intentional.partners) and I ran a hack week. It was fun, we learnt a lot. But what we were left with alongside two half finished apps, was a feeling that 'more people should be doing this'.
 
 ## What's going on? I'm exhausted
 
