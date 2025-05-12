@@ -6,13 +6,13 @@ date: 2025-05-12
 draft: false
 ---
 
-Check out [this post](/ai-hack-week) for part one of this post. I split it in two as this is the 'ranty bit'.
+_Just got here? If you haven't already check out [part one](/ai-hack-week) of this post._
 
-But TL;DR, [Tom](https://newsletter.intentional.partners) and I ran a hack week. It was fun, we learnt a lot. But what we were left with alongside two half finished apps, was a feeling that 'more people should be doing this'.
+But if you can't be bothered, TL;DR, [Tom](https://newsletter.intentional.partners) and I ran a vibe coding hack week. It was fun, we learnt a lot. But what we were left with alongside two half finished apps was a feeling that 'more people should be doing this'.
 
-## What's going on? I'm exhausted
+## Oh no. Jonny no.
 
-Vibe coding, AI, oh god no. Many of us are using it to some extent, for auto-complete, search, telling us how many calories in a jacket potato. Meanwhile we're bombarded with AI IS THE FUTURE! TAKING OUR JOBS! I MADE AN APP THAT CAN LEAK YOUR DATA IN 6 MINUTES, HERE'S THE WAITLIST.
+Vibe coding, ugh. AI, eye roll. Many of us are using it to some extent, for auto-complete, search, telling us how many calories in a jacket potato. Meanwhile we're bombarded with AI IS THE FUTURE! TAKING OUR JOBS! I MADE AN APP IN 6 MINUTES THAT CAN LEAK YOUR DATA, HERE'S THE WAITLIST.
 
 So exhausting. So much noise. What do we all do about it?
 
