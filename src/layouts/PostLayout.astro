@@ -20,16 +20,17 @@ const imageAlt = frontmatter.image?.alt ? frontmatter.image.alt : frontmatter.ti
     </div>
     )}
     <div class="py-4 md:py-8 flex flex-col md:gap-2">
-      <h4 class="text-lg md:text-2xl font-bold text-aubergine-200">{new Date(frontmatter.date).toDateString()}</h4>
+      <div class="flex gap-2 -translate-x-2 pb-2">
+        {frontmatter.categories.length !== 0 && frontmatter.categories.map((category, index) => (
+            <span class="text-xs md:text-sm font-bold py-0.5 px-1.5 opacity-75 text-aubergine-200 border-2 border-aubergine-200 rounded-full -rotate-12">
+              {category}{index < frontmatter.categories.length - 1 ? ', ' : ''}
+            </span>
+          ))
+        }
+        <span class="font-bold text-aubergine-200">{new Date(frontmatter.date).toDateString()}</span>
+      </div>
       <h1 class="font-display text-2xl md:text-4xl lg:text-6xl font-bold xerox">{frontmatter.title}</h1>
       <p class="text-xl">{frontmatter.description}</p>
-      {frontmatter.categories.length !== 0 && (
-        <span class="pt-2 opacity-75 text-aubergine-700">
-          {frontmatter.categories.map((category, index) => (
-            `${category}${index < frontmatter.categories.length - 1 ? ', ' : ''}`
-          ))}
-        </span>
-      )}
     </div>
     <div class="prose-custom">
       <slot />

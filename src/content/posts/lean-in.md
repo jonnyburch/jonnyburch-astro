@@ -8,7 +8,7 @@ draft: false
 
 _Just got here? If you haven't already check out [part one](/ai-hack-week) of this post._
 
-But if you can't be bothered, TL;DR, [Tom](https://newsletter.intentional.partners) and I ran a vibe coding hack week. It was fun, we learnt a lot. But what we were left with alongside two half finished apps was a feeling that 'more people should be doing this'.
+_But if you can't be bothered, TL;DR, [Tom](https://newsletter.intentional.partners) and I ran a vibe coding hack week. It was fun, we learnt a lot. But what we were left with alongside two half finished apps was a feeling that 'more people should be doing this'._
 
 ## Oh no. Jonny no.
 
