@@ -3,8 +3,10 @@
 
 @theme {
   --font-sans: Inter, sans-serif;
-  --color-peach-100: #f7e0d4;
-  --color-aubergine-700: rgb(5, 66, 54);
+  --color-peach-100: oklch(0.92 0.0565 49.45);
+  --color-aubergine-200: oklch(0.86 0.2159 175.01);
+  --color-aubergine-700: oklch(0.45 0.0954 175.01);
+  --color-aubergine-900: oklch(0.28 0.0644 175.01);
 }
 
 @layer base {
@@ -50,7 +52,7 @@
   .prose-custom {
     @apply font-normal prose xl:prose-xl prose-h1:text-aubergine-700 prose-h2:text-aubergine-700 prose-h3:text-aubergine-700 prose-h4:text-aubergine-700 prose-li:text-aubergine-700 prose-a:text-aubergine-700 prose-strong:text-aubergine-700 prose-ul:text-aubergine-700 prose-ol:text-aubergine-700 prose-blockquote:text-aubergine-700 prose-img:text-aubergine-700 prose-ul:marker:text-aubergine-700 prose-ol:marker:text-aubergine-700 prose-blockquote:text-aubergine-700 prose-blockquote:font-bold prose-blockquote:border-aubergine-700 prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:text-xl lg:prose-blockquote:text-2xl prose-blockquote:not-italic;
     p, li {
-      @apply md:text-lg lg:text-xl leading-relaxed text-aubergine-700;
+      @apply md:text-lg lg:text-xl leading-relaxed text-aubergine-900;
     }
     .blockquote p {
       filter: url(#xerox);
@@ -60,7 +62,7 @@
       @apply mb-0
     }
     img + em {
-      @apply text-aubergine-700 text-sm not-italic;
+      @apply text-aubergine-900 text-sm not-italic;
     }
 
     .tweet {
