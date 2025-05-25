@@ -18,10 +18,10 @@ description: "${description}"
 categories: [Journal]
 date: ${date}
 draft: true
-image:
-    src: ../../assets/salad.png
-    alt: ""
-    caption: ""
+# image:
+#     src: "../../assets/salad.png"
+#     alt: ""
+#     caption: ""
 ---
 
 `;
