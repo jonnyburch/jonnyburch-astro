@@ -3,7 +3,7 @@ title: Why's my CEO being an asshole?
 date: 2024-07-11 01:06:00
 categories: [Article]
 description: They're probably staring into the abyss
-draft: true
+draft: false
 ---
 Over the last decade I've been fortunate enough to be employee number 1 at a startup that went on to a level of scale as well as being CEO of a startup that has fundraised, hired and gone through the painful birthing phase.
 
