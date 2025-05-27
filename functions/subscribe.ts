@@ -33,16 +33,24 @@ function isOriginAllowed(origin: string | null): boolean {
 
 export default {
   async fetch(request: Request, env: { PLUNK_API_KEY: string }) {
+    // Get the origin from the request
+    const origin = request.headers.get('Origin');
+    console.log('Request origin:', origin);
+
     // Simple CORS headers for all responses
     const corsHeaders = {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': origin || '*',
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Max-Age': '86400',
     };
 
     // Handle CORS preflight requests
     if (request.method === 'OPTIONS') {
-      return new Response(null, { headers: corsHeaders });
+      return new Response(null, {
+        status: 204,
+        headers: corsHeaders
+      });
     }
 
     // Only allow POST requests
@@ -73,6 +81,7 @@ export default {
       }
 
       const body = await request.json();
+      console.log('Received request body:', body);
 
       if (!body.email || !body.name) {
         return new Response(
