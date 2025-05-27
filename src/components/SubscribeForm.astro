@@ -2,11 +2,12 @@
 // Get the base URL for the Worker
 const isDev = import.meta.env.DEV;
 const isPreview = import.meta.env.SITE?.includes('pages.dev');
+const currentHost = import.meta.env.SITE || 'jonnyburch.com';
 const workerUrl = isDev
   ? 'http://localhost:8787'
-  : isPreview
-    ? `https://${import.meta.env.SITE}`
-    : 'https://jonnyburch.com';
+  : `https://${currentHost}`;
+
+console.log('Environment:', { isDev, isPreview, currentHost, workerUrl });
 ---
 
 <form id="subscribe-form" class="flex flex-col md:flex-row gap-2">
