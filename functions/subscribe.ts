@@ -31,124 +31,47 @@ function isOriginAllowed(origin: string | null): boolean {
   });
 }
 
-export default {
-  async fetch(request: Request, env: { PLUNK_API_KEY: string }) {
-    // Get the origin from the request
-    const origin = request.headers.get('Origin');
-    console.log('Request origin:', origin);
+export const onRequest = async (context: Parameters<PagesFunction<Env>>[0]): Promise<Response> => {
+  const request = context.request;
+  const env = context.env;
 
-    // Simple CORS headers for all responses
-    const corsHeaders = {
-      'Access-Control-Allow-Origin': origin || '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-      'Access-Control-Max-Age': '86400',
-    };
+  // Get the origin from the request
+  const origin = request.headers.get('Origin');
+  console.log('Request origin:', origin);
 
-    // Handle CORS preflight requests
-    if (request.method === 'OPTIONS') {
-      return new Response(null, {
-        status: 204,
-        headers: corsHeaders
-      });
-    }
+  // Simple CORS headers for all responses
+  const corsHeaders = {
+    'Access-Control-Allow-Origin': origin || '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Max-Age': '86400',
+  };
 
-    // Only allow POST requests
-    if (request.method !== 'POST') {
-      return new Response(JSON.stringify({ error: 'Method not allowed' }), {
-        status: 405,
-        headers: {
-          'Content-Type': 'application/json',
-          ...corsHeaders
-        },
-      });
-    }
+  // Handle CORS preflight requests
+  if (request.method === 'OPTIONS') {
+    return new Response(null, {
+      status: 204,
+      headers: corsHeaders
+    });
+  }
 
-    try {
-      // Check if API key exists
-      if (!env.PLUNK_API_KEY) {
-        console.error('PLUNK_API_KEY is not set');
-        return new Response(
-          JSON.stringify({ error: 'Server configuration error' }),
-          {
-            status: 500,
-            headers: {
-              'Content-Type': 'application/json',
-              ...corsHeaders
-            }
-          }
-        );
-      }
+  // Only allow POST requests
+  if (request.method !== 'POST') {
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), {
+      status: 405,
+      headers: {
+        'Content-Type': 'application/json',
+        ...corsHeaders
+      },
+    });
+  }
 
-      const body = await request.json();
-      console.log('Received request body:', body);
-
-      if (!body.email || !body.name) {
-        return new Response(
-          JSON.stringify({ error: 'Email and name are required' }),
-          {
-            status: 400,
-            headers: {
-              'Content-Type': 'application/json',
-              ...corsHeaders
-            }
-          }
-        );
-      }
-
-      // Process the name to get first name
-      const firstName = body.name.split(' ')[0];
-
-      console.log('Making request to Plunk API...');
-      const response = await fetch('https://api.useplunk.com/v1/track', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${env.PLUNK_API_KEY}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          event: 'newsletter_subscription',
-          email: body.email,
-          subscribed: true,
-          data: {
-            name: body.name,
-            first_name: firstName,
-            date_subscribed: new Date().toISOString(),
-            source: 'jb_website_form'
-          }
-        })
-      });
-
-      const data = await response.json();
-      console.log('Plunk API response:', data);
-
-      if (!response.ok) {
-        return new Response(
-          JSON.stringify({ error: data.message || 'Failed to subscribe' }),
-          {
-            status: response.status,
-            headers: {
-              'Content-Type': 'application/json',
-              ...corsHeaders
-            }
-          }
-        );
-      }
-
+  try {
+    // Check if API key exists
+    if (!env.PLUNK_API_KEY) {
+      console.error('PLUNK_API_KEY is not set');
       return new Response(
-        JSON.stringify({ message: 'Successfully subscribed!' }),
-        {
-          status: 200,
-          headers: {
-            'Content-Type': 'application/json',
-            ...corsHeaders
-          }
-        }
-      );
-    } catch (error) {
-      console.error('Error in subscribe endpoint:', error);
-      return new Response(
-        JSON.stringify({ error: 'Internal server error', details: error instanceof Error ? error.message : 'Unknown error' }),
+        JSON.stringify({ error: 'Server configuration error' }),
         {
           status: 500,
           headers: {
@@ -158,5 +81,83 @@ export default {
         }
       );
     }
+
+    const body = await request.json() as SubscribeRequest;
+    console.log('Received request body:', body);
+
+    if (!body.email || !body.name) {
+      return new Response(
+        JSON.stringify({ error: 'Email and name are required' }),
+        {
+          status: 400,
+          headers: {
+            'Content-Type': 'application/json',
+            ...corsHeaders
+          }
+        }
+      );
+    }
+
+    // Process the name to get first name
+    const firstName = body.name.split(' ')[0];
+
+    console.log('Making request to Plunk API...');
+    const response = await fetch('https://api.useplunk.com/v1/track', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${env.PLUNK_API_KEY}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        event: 'newsletter_subscription',
+        email: body.email,
+        subscribed: true,
+        data: {
+          name: body.name,
+          first_name: firstName,
+          date_subscribed: new Date().toISOString(),
+          source: 'jb_website_form'
+        }
+      })
+    });
+
+    const data = await response.json();
+    console.log('Plunk API response:', data);
+
+    if (!response.ok) {
+      return new Response(
+        JSON.stringify({ error: data.message || 'Failed to subscribe' }),
+        {
+          status: response.status,
+          headers: {
+            'Content-Type': 'application/json',
+            ...corsHeaders
+          }
+        }
+      );
+    }
+
+    return new Response(
+      JSON.stringify({ message: 'Successfully subscribed!' }),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+          ...corsHeaders
+        }
+      }
+    );
+  } catch (error) {
+    console.error('Error in subscribe endpoint:', error);
+    return new Response(
+      JSON.stringify({ error: 'Internal server error', details: error instanceof Error ? error.message : 'Unknown error' }),
+      {
+        status: 500,
+        headers: {
+          'Content-Type': 'application/json',
+          ...corsHeaders
+        }
+      }
+    );
   }
 };
