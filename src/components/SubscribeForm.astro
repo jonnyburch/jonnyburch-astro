@@ -1,13 +1,7 @@
 ---
 // Get the base URL for the Worker
 const isDev = import.meta.env.DEV;
-const isPreview = import.meta.env.SITE?.includes('pages.dev');
-const currentHost = import.meta.env.SITE || 'jonnyburch.com';
-const workerUrl = isDev
-  ? 'http://localhost:8787'
-  : `https://${currentHost}`;
-
-console.log('Environment:', { isDev, isPreview, currentHost, workerUrl });
+const workerUrl = isDev ? 'http://localhost:8787' : '';
 ---
 
 <form id="subscribe-form" class="flex flex-col md:flex-row gap-2">
@@ -63,6 +57,11 @@ console.log('Environment:', { isDev, isPreview, currentHost, workerUrl });
     throw new Error('Invalid form element');
   }
 
+  // Get the current host for the worker URL
+  const currentHost = window.location.host;
+  const finalWorkerUrl = workerUrl || `https://${currentHost}`;
+  console.log('Using worker URL:', finalWorkerUrl);
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     errorMessage.classList.add('hidden');
@@ -79,7 +78,7 @@ console.log('Environment:', { isDev, isPreview, currentHost, workerUrl });
     }
 
     try {
-      const response = await fetch(`${workerUrl}/subscribe`, {
+      const response = await fetch(`${finalWorkerUrl}/subscribe`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
