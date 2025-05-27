@@ -14,9 +14,8 @@ var ogImagePath = getImagePath({ url, site });
 var openGraphImageUrl = ogImagePath.replace("/index", "").replace(/\.png$/, '/index.png');
 ---
 
-
 <title>{title}</title>
-<meta name="description" content="Astro description" />
+<meta name="description" content={description} />
 <meta name="viewport" content="width=device-width" />
 <link rel="preconnect" href="https://rsms.me/">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -27,23 +26,29 @@ var openGraphImageUrl = ogImagePath.replace("/index", "").replace(/\.png$/, '/in
     title="Jonny Burch"
     href={new URL("feed.xml", Astro.site)}
 />
+
+<!-- Required OpenGraph meta tags -->
+<meta property="og:title" content={title} />
+<meta property="og:url" content={url} />
+<meta property="og:type" content="website" />
+<meta property="og:image" content={openGraphImageUrl} />
+<meta property="og:description" content={description} />
+
 <SEO
-  title={title},
-  description={description},
-  openGraph={
-    {
-      basic: {
-        title: title,
-        type: "website",
-        image: openGraphImageUrl,
-        url: url,
-      },
-      optional: {
-        description: description,
-      },
-    }
-  },
+  title={title}
+  description={description}
+  openGraph={{
+    basic: {
+      title: title,
+      type: "website",
+      image: openGraphImageUrl,
+      url: url,
+    },
+    optional: {
+      description: description,
+    },
+  }}
   extend={{
     link: [{rel: "icon", href: "/favicon.svg"}],
-  }},
+  }}
 />

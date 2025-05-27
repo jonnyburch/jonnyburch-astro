@@ -5,6 +5,7 @@ import { customOgMediaLayout } from "./src/customRenderer.tsx";
 
 export default defineConfig({
   site: "https://jonnyburch.com",
+  base: "/",
   trailingSlash: "never",
   vite: {
     plugins: [tailwindcss()],

@@ -25,3 +25,8 @@ npm run build
 ```bash
 npm run preview
 ```
+
+
+### Import contacts
+
+Add a csv file to root with Headers `Email, Name, Subscription Date` (called contacts_import.csv)
