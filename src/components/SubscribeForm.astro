@@ -1,0 +1,91 @@
+<form id="subscribe-form" class="space-y-4">
+  <div>
+    <label for="name" class="block text-sm font-medium text-gray-700">
+      Name
+    </label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      required
+    />
+  </div>
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-700">
+      Email
+    </label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+      required
+    />
+  </div>
+  <button
+    type="submit"
+    class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50"
+  >
+    Subscribe
+  </button>
+  <p id="status-message" class="text-sm hidden"></p>
+</form>
+
+<script>
+  document.getElementById('subscribe-form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const statusMessage = document.getElementById('status-message') as HTMLParagraphElement;
+
+    // Disable button and show loading state
+    submitButton.disabled = true;
+    submitButton.textContent = 'Subscribing...';
+    statusMessage.classList.add('hidden');
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: (form.elements.namedItem('email') as HTMLInputElement).value,
+          name: (form.elements.namedItem('name') as HTMLInputElement).value
+        }),
+      });
+
+      // Check if the response is JSON
+      const contentType = response.headers.get('content-type');
+      if (!contentType || !contentType.includes('application/json')) {
+        throw new Error('Server returned an invalid response format');
+      }
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || `Server error: ${response.status}`);
+      }
+
+      // Show success message
+      statusMessage.textContent = 'Thanks for subscribing!';
+      statusMessage.className = 'text-sm text-green-600';
+      form.reset();
+    } catch (error) {
+      // Show error message
+      let errorMessage = 'An error occurred while subscribing';
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      }
+      statusMessage.textContent = errorMessage;
+      statusMessage.className = 'text-sm text-red-600';
+      console.error('Subscription error:', error);
+    } finally {
+      // Reset button state
+      submitButton.disabled = false;
+      submitButton.textContent = 'Subscribe';
+      statusMessage.classList.remove('hidden');
+    }
+  });
+</script>

@@ -1,5 +1,6 @@
 ---
 import Filters from './Filters.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
 ---
 <div class="text-sm py-8 container">
 	<p class="pb-2">Find me on:</p>
@@ -10,6 +11,7 @@ import Filters from './Filters.astro';
     <li class="text-sm underline"><a href="mailto:jonny@jonnyburch.com">jonny@jonnyburch.com</a></li>
   </ul>
   <p class="pt-16 opacity-75">© 2011-{new Date().getFullYear()} Jonny Burch  ·  <a href="/feed.xml">RSS</a></p>
+  <SubscribeForm />
 </div>
 <div class="absolute bottom-0 right-0">
   <Filters />
