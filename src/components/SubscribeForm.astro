@@ -1,19 +1,25 @@
+---
+// Get the base URL for the Worker
+const isDev = import.meta.env.DEV;
+const workerUrl = isDev ? 'http://localhost:8787' : '';
+---
+
 <form id="subscribe-form" class="flex flex-col md:flex-row gap-2">
   <input
     type="text"
     id="name"
-    placeholder="Name"
     name="name"
-    class="px-3 py-2 border-2 border-aubergine-700"
+    placeholder="Name"
     required
+    class="px-3 py-2 border-2 border-aubergine-700"
   />
   <input
     type="email"
     id="email"
-    placeholder="Email"
     name="email"
-    class="px-3 py-2 border-2 border-aubergine-700"
+    placeholder="Email"
     required
+    class="px-3 py-2 border-2 border-aubergine-700"
   />
   <button
     type="submit"
@@ -21,63 +27,78 @@
   >
     Subscribe
   </button>
-  <p id="status-message" class="text-sm hidden"></p>
 </form>
 
-<script>
-  document.getElementById('subscribe-form')?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const submitButton = form.querySelector('button[type="submit"]') as HTMLButtonElement;
-    const statusMessage = document.getElementById('status-message') as HTMLParagraphElement;
+<div
+  id="success-message"
+  class="hidden mt-4 p-4 bg-peach-100 text-aubergine-700"
+>
+  Thanks for subscribing!
+</div>
 
-    // Disable button and show loading state
-    submitButton.disabled = true;
-    submitButton.textContent = 'Subscribing...';
-    statusMessage.classList.add('hidden');
+<div
+  id="error-message"
+  class="hidden mt-4 p-4 bg-peach-100 text-aubergine-700"
+>
+</div>
+
+<script define:vars={{ workerUrl }}>
+  const form = document.getElementById('subscribe-form');
+  const successMessage = document.getElementById('success-message');
+  const errorMessage = document.getElementById('error-message');
+
+  if (!form || !successMessage || !errorMessage) {
+    console.error('Required form elements not found');
+    throw new Error('Required form elements not found');
+  }
+
+  if (!(form instanceof HTMLFormElement)) {
+    console.error('Form element is not an HTMLFormElement');
+    throw new Error('Invalid form element');
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorMessage.classList.add('hidden');
+    successMessage.classList.add('hidden');
+
+    const formData = new FormData(form);
+    const name = formData.get('name')?.toString() || '';
+    const email = formData.get('email')?.toString() || '';
+
+    if (!name || !email) {
+      errorMessage.textContent = 'Please fill in all fields';
+      errorMessage.classList.remove('hidden');
+      return;
+    }
 
     try {
-      const response = await fetch('/api/subscribe', {
+      const response = await fetch(`${workerUrl}/subscribe`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-          email: (form.elements.namedItem('email') as HTMLInputElement).value,
-          name: (form.elements.namedItem('name') as HTMLInputElement).value
-        }),
+        body: JSON.stringify({ name, email })
       });
 
-      // Check if the response is JSON
-      const contentType = response.headers.get('content-type');
-      if (!contentType || !contentType.includes('application/json')) {
-        throw new Error('Server returned an invalid response format');
-      }
-
-      const data = await response.json();
-
       if (!response.ok) {
-        throw new Error(data.error || `Server error: ${response.status}`);
+        const data = await response.json();
+        throw new Error(data.error || 'Failed to subscribe');
       }
+
+      // Clear the form
+      form.reset();
 
       // Show success message
-      statusMessage.textContent = 'Thanks for subscribing!';
-      statusMessage.className = 'text-sm text-aubergine-700';
-      form.reset();
+      successMessage.classList.remove('hidden');
+      setTimeout(() => {
+        successMessage.classList.add('hidden');
+      }, 5000);
+
     } catch (error) {
-      // Show error message
-      let errorMessage = 'An error occurred while subscribing';
-      if (error instanceof Error) {
-        errorMessage = error.message;
-      }
-      statusMessage.textContent = errorMessage;
-      statusMessage.className = 'text-sm text-aubergine-700';
-      console.error('Subscription error:', error);
-    } finally {
-      // Re-enable button and reset text
-      submitButton.disabled = false;
-      submitButton.textContent = 'Subscribe';
-      statusMessage.classList.remove('hidden');
+      console.error('Error:', error);
+      errorMessage.textContent = error instanceof Error ? error.message : 'Something went wrong. Please try again later.';
+      errorMessage.classList.remove('hidden');
     }
   });
 </script>

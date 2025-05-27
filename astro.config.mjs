@@ -2,18 +2,13 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import opengraphImages from "astro-opengraph-images";
 import { customOgMediaLayout } from "./src/customRenderer.tsx";
-import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
   site: "https://jonnyburch.com",
+  base: "/",
   trailingSlash: "never",
-  output: 'server',
-  adapter: cloudflare({
-    mode: 'directory'
-  }),
   vite: {
     plugins: [tailwindcss()],
-    envPrefix: ['PLUNK_'] // Allow PLUNK_ prefixed environment variables
   },
   integrations: [
     opengraphImages({

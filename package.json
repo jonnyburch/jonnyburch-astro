@@ -10,7 +10,6 @@
     "new-post": "node scripts/new-post.js"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.5.3",
     "@astrojs/rss": "^4.0.11",
     "astro": "^5.1.8",
     "astro-opengraph-images": "^1.11.7",
@@ -26,6 +25,8 @@
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.0.0-beta.9",
     "react": "^19.0.0",
-    "tailwindcss": "^4.0.0-beta.9"
+    "tailwindcss": "^4.0.0-beta.9",
+    "@cloudflare/workers-types": "^4.20250515.0"
+
   }
 }
