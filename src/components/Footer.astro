@@ -3,6 +3,10 @@ import Filters from './Filters.astro';
 import SubscribeForm from '../components/SubscribeForm.astro';
 ---
 <div class="text-sm py-8 container">
+  <div class="py-4 flex flex-col gap-2">
+    <p>Subscribe to my newsletter:</p>
+    <SubscribeForm />
+  </div>
 	<p class="pb-2">Find me on:</p>
   <ul class="flex flex-col list-none gap-2">
     <li class="text-sm underline"><a href="https://bluesky.social/@jonnyburch">Bluesky</a></li>
@@ -11,7 +15,6 @@ import SubscribeForm from '../components/SubscribeForm.astro';
     <li class="text-sm underline"><a href="mailto:jonny@jonnyburch.com">jonny@jonnyburch.com</a></li>
   </ul>
   <p class="pt-16 opacity-75">© 2011-{new Date().getFullYear()} Jonny Burch  ·  <a href="/feed.xml">RSS</a></p>
-  <SubscribeForm />
 </div>
 <div class="absolute bottom-0 right-0">
   <Filters />
