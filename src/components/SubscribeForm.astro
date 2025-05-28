@@ -23,6 +23,7 @@ const workerUrl = isDev ? 'http://localhost:8787' : '';
   />
   <button
     type="submit"
+    id="submit-button"
     class="bg-aubergine-700 text-white px-3 py-2 cursor-pointer"
   >
     Subscribe
@@ -31,23 +32,24 @@ const workerUrl = isDev ? 'http://localhost:8787' : '';
 
 <div
   id="success-message"
-  class="hidden mt-4 p-4 bg-peach-100 text-aubergine-700"
+  class="hidden px-4 py-2 bg-aubergine-200 text-aubergine-700"
 >
   Thanks for subscribing!
 </div>
 
 <div
   id="error-message"
-  class="hidden mt-4 p-4 bg-peach-100 text-aubergine-700"
+  class="hidden px-4 py-2 bg-red-800 text-white"
 >
 </div>
 
 <script define:vars={{ workerUrl }}>
   const form = document.getElementById('subscribe-form');
+  const submitButton = document.getElementById('submit-button');
   const successMessage = document.getElementById('success-message');
   const errorMessage = document.getElementById('error-message');
 
-  if (!form || !successMessage || !errorMessage) {
+  if (!form || !submitButton || !successMessage || !errorMessage) {
     console.error('Required form elements not found');
     throw new Error('Required form elements not found');
   }
@@ -77,6 +79,10 @@ const workerUrl = isDev ? 'http://localhost:8787' : '';
       return;
     }
 
+    // Disable the button and show loading state
+    submitButton.disabled = true;
+    submitButton.textContent = 'Working...';
+
     try {
       const response = await fetch(`${finalWorkerUrl}/subscribe`, {
         method: 'POST',
@@ -104,6 +110,10 @@ const workerUrl = isDev ? 'http://localhost:8787' : '';
       console.error('Error:', error);
       errorMessage.textContent = error instanceof Error ? error.message : 'Something went wrong. Please try again later.';
       errorMessage.classList.remove('hidden');
+    } finally {
+      // Re-enable the button and restore original text
+      submitButton.disabled = false;
+      submitButton.textContent = 'Subscribe';
     }
   });
 </script>
