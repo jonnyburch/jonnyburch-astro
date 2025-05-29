@@ -111,7 +111,8 @@ async function importContacts() {
         const data = {
           name: record.Name || '',
           first_name: record.Name.split(' ')[0] || '',
-          date_subscribed: record['Subscription date'] || new Date().toISOString()
+          date_subscribed: record['Subscription date'] || new Date().toISOString(),
+          source: 'progression_investor'
         };
 
         const existingContact = contactsByEmail.get(record.Email);

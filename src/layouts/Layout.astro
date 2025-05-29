@@ -3,9 +3,10 @@ interface Props {
 	title: string;
 	description?: string;
 	ogImage?: string;
+	footerSubscribe?: boolean;
 }
 
-const { title, description = "A person", ogImage = "/og-image.jpg" } = Astro.props;
+const { title, description = "A person", ogImage = "/og-image.jpg", footerSubscribe = true } = Astro.props;
 import "../styles/tailwind.css";
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
@@ -23,7 +24,7 @@ import Head from '../components/Head.astro'
 			<Header />
 			<div class="content-container">
 				<slot />
-				<Footer />
+				<Footer footerSubscribe={footerSubscribe} />
 			</div>
 		</div>
 	</body>

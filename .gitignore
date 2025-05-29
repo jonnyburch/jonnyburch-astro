@@ -26,5 +26,6 @@ pnpm-debug.log*
 
 # contacts management
 contacts_import.csv
+contacts_import_2.csv
 
 .wrangler/
