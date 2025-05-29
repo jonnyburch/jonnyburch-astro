@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+
+const title = "Jonny Burch"
+const description = "Designer, product wonk, founder and reader of internets"
+---
+
+<Layout title={`${title}`} description={description} footerSubscribe={false}>
+	<main class="pt-8">
+		<div class="w-full max-w-prose">
+			<h1 class="text-aubergine-700 xerox text-3xl md:text-4xl lg:text-6xl font-bold"> Join my newsletter</h1>
+		</div>
+		<div class="prose-custom">
+			<p>Occasional updates and roundups of my reading, writing, speaking and other activities.</p>
+			<SubscribeForm />
+		</div>
+		<div class="w-full max-w-prose py-4">
+		</div>
+	</main>
+</Layout>
