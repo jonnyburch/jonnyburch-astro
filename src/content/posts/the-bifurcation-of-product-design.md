@@ -48,6 +48,8 @@ So this leads me to wonder — are we headed for a world in which job titles ful
 
 And if so, how many of each will any team need? And where will they come from? I for one would love to see someone step from a different discipline into the creative side, without fear of having to learn how to build good Figma components.
 
+Will each design team continue to take a stance here? Only hiring designers with technical chops or choosing to make their design team taste makers while giving engineers more autonomy over the front end?
+
 Finally, how do these groups work together to build something that truly makes sense for an end user?
 
 One thing I'm convinced of: for designers wanting to create at the edge of what's possible in this moment of pure invention, they're going to have to embrace a new path. A path that involves both deep instrospection and a growth mindset.
