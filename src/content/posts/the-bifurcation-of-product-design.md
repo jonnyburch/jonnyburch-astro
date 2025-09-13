@@ -6,7 +6,7 @@ date: 2025-09-13
 draft: false
 image:
   src: ../../assets/hatch.jpg
-  caption: "Emmet showing off his side projects"
+  caption: "Emmet showing off his cool side projects"
 ---
 
 This week I attended [Hatch Conference](https://hatchconference.com) in Berlin ostensibly to run a 'Designer to Founder' round table. But really, I was there to immerse myself in the energy of the design community—a community I hadn’t gathered with since speaking at Jam London back in 2019 (ah, pre-covid days).
