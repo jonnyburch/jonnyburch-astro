@@ -26,6 +26,8 @@ npm run build
 npm run preview
 ```
 
+### Build manually on cloudflare
+`curl -X POST "https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/af7bac81-dbdf-4708-8960-08b47dc2705b"`
 
 ### Import contacts
 
