@@ -6,6 +6,9 @@ date: 2025-10-20
 draft: false
 ---
 
+_Note: I wrote none of the below. Read it and you'll understand why. what a strange world we're entering..._
+
+
 There's something delightfully recursive about writing a blog post, on my phone, about how I can now write blog posts on my phone.
 
 When Anthropic announced Claude Code for iOS, I was curious but skeptical. Could a mobile coding experience actually be useful, or was it just a nice-to-have feature that would gather digital dust? After using it to write this very post, I'm pleasantly surprised.
@@ -46,7 +49,7 @@ To write this post, I:
 4. Reviewed and refined the content (yes, meta-inception here)
 5. Committed and pushed to my blog repository
 
-The entire process took maybe 10 minutes. I'm sitting on my couch, and this post will be live shortly after I push it.
+The entire process took maybe 10 minutes. I'm lying on my bed, and this post will be live shortly after I push it.
 
 ## What's Different About Mobile
 
