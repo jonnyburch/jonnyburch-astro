@@ -111,7 +111,7 @@ export const onRequest = async (context: Parameters<PagesFunction<Env>>[0]): Pro
       body: JSON.stringify({
         event: 'newsletter_subscription',
         email: body.email,
-        subscribed: true,
+        subscribed: false, // Double opt-in: contact must confirm via email
         data: {
           name: body.name,
           first_name: firstName,
