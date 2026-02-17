@@ -1,6 +1,6 @@
 ---
 title: "Life after Figma is coming (and it will be glorious)"
-description: "As code becomes source of truth, design tools become interfaces on code, not the other way round. We'll see hundreds"
+description: "As code becomes source of truth, design tools become interfaces on code, not the other way round."
 categories: [Article]
 date: 2026-02-11
 draft: false
