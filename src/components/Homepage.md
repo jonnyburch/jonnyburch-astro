@@ -1,4 +1,4 @@
-I'm a designer, product wonk, founder and reader of internets. Currently tinkering as [Toy Studio](https://toy.studio).
+I'm a designer, product wonk, founder and reader of internets. Currently tinkering as [Toy Studio](https://toy.studio) and one half of [Near Future](https://nearfuture.works).
 Until very recently I was CEO of [Progression](https://progression.co), the worlds first career pathway management platform. [We got acquired in September 2024](https://progression.co/blog/progression-is-joining-the-career-io-family/) and I remain both immensely proud of what we achieved and very pleased that it's now in good hands.
 
 (I'll probably write more about my 6 year journey as a founder — aka all my fu*kups — in good time.)
