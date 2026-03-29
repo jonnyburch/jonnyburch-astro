@@ -12,6 +12,8 @@ const { url, site } = Astro;
 
 var ogImagePath = getImagePath({ url, site });
 var openGraphImageUrl = ogImagePath.replace("/index", "").replace(/\.png$/, '/index.png');
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 ---
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X33EKLN7L4"></script>
@@ -25,8 +27,6 @@ var openGraphImageUrl = ogImagePath.replace("/index", "").replace(/\.png$/, '/in
 <!-- Fathom - beautiful, simple website analytics -->
 <script src="https://cdn.usefathom.com/script.js" data-site="VMKNKOTY" defer></script>
 <!-- / Fathom -->
-<title>{title}</title>
-<meta name="description" content={description} />
 <meta name="viewport" content="width=device-width" />
 <link rel="preconnect" href="https://rsms.me/">
 <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -38,22 +38,16 @@ var openGraphImageUrl = ogImagePath.replace("/index", "").replace(/\.png$/, '/in
     href={new URL("feed.xml", Astro.site)}
 />
 
-<!-- Required OpenGraph meta tags -->
-<meta property="og:title" content={title} />
-<meta property="og:url" content={url} />
-<meta property="og:type" content="website" />
-<meta property="og:image" content={openGraphImageUrl} />
-<meta property="og:description" content={description} />
-
 <SEO
   title={title}
   description={description}
+  canonical={canonicalURL}
   openGraph={{
     basic: {
       title: title,
       type: "website",
       image: openGraphImageUrl,
-      url: url,
+      url: canonicalURL,
     },
     optional: {
       description: description,
