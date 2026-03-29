@@ -14,7 +14,7 @@ export async function GET(context) {
     site: context.site,
     trailingSlash: false,
     items: activePosts.map((post) => ({
-      link: `/${post.id.split('.')[0]}/`,
+      link: `/${post.id.split('.')[0]}`,
       title: post.data.title,
       pubDate: post.data.date,
       description: post.data.description,
